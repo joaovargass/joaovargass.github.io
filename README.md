@@ -155,58 +155,58 @@ The results for each country are shown on the table below. <i>Total Users</i> is
 
 <table>
     <tr>
-        <td>extbf{Country}</td>
-        <td>\textbf{Total Users}</td>
-        <td>\textbf{Opt-in Users}</td>
-        <td>\textbf{Active Users}</td>
-        <td>\textbf{Active and Opt-in Users}</td>
-        <td>\textbf{Active and Opt-in Female \%}</td>
-        <td>\textbf{Active and Opt-in Female \%}</td>
+        <td><b>Country</b></td>
+        <td><b>Total Users</b></td>
+        <td><b>Opt-in Users</b></td>
+        <td><b>Active Users</b></td>
+        <td><b>Active and Opt-in Users</b></td>
+        <td><b>Active and Opt-in Female %</b></td>
+        <td><b>Active and Opt-in Female %</b>/td>
     </tr>
     <tr>
-        <td>\textbf{France}</td>
+        <td>France</td>
         <td>119186</td>
         <td>88316</td>
         <td>80977</td>
         <td>66979</td>
-        <td>94\%</td>
-        <td>6\%</td>
+        <td>94%</td>
+        <td>6%</td>
     </tr>
     <tr>
-        <td>\textbf{Italy}</td>
+        <td>Italy</td>
         <td>454006</td>
         <td>407995</td>
         <td>242937</td>
         <td>239469</td>
-        <td>69\%</td>
-        <td>31\%</td>
+        <td>69%</td>
+        <td>31%</td>
     </tr>
     <tr>
-        <td>\textbf{Spain}</td>
+        <td>Spain</td>
         <td>456780</td>
         <td>305224</td>
         <td>250391</td>
         <td>202782</td>
-        <td>91\%</td>
-        <td>9\%</td>
+        <td>91%</td>
+        <td>9%</td>
     </tr>
     <tr>
-        <td>\textbf{Germany}</td>
+        <td>Germany</td>
         <td>206550</td>
         <td>82771</td>
         <td>77083</td>
         <td>58705</td>
-        <td>86\%</td>
-        <td>14\%</td>
+        <td>86%</td>
+        <td>14%</td>
     </tr>
     <tr>
-        <td>\textbf{UK}</td>
+        <td>UK</td>
         <td>145965</td>
         <td>89591</td>
         <td>65589</td>
         <td>54906</td>
-        <td>89\%</td>
-        <td>11\%</td>
+        <td>89%</td>
+        <td>11%</td>
     </tr>
 </table>
 
