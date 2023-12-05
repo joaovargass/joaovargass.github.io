@@ -223,6 +223,6 @@ The objective of this part of the analysis was to understand, for Display Advert
 Two queries were used on AMC to get the information needed for the analysis, one for day parting and one for frequency cap. The queries were executed per month, meaning the date range selected on AMC was of a month, and also per brand. There were two grooming brands in analysis, which will be defined as GB1 (Grooming Brand 1) and GB2 (Grooming Brand 2) for legal reasons.
 
 For day parting, the main KPI used to understand how the campaign has performed is the purchase rate, which was calculated for each hour of the day. After calculating the purchase rate per hour, a chart was plot for each marketing campaign in analysis. On this chart, besides the purchase rate per hour, the percentage of the total daily impressions a campaign has received is displayed too, also divided by hour of the day. One of the results of this analysis for GB1 is shown on the chart below. It is possible to see that the time of the day that this specific campaign receives the most impressions is during the night, but the best purchase rate happens during the morning period.
-
+<p align="center">
 ![Day parting chart for a Braun marketing campaign](https://github.com/joaovargass/joaovargass.github.io/assets/39708920/fe9a19a1-f7cc-458f-8ed4-a96d5f9b6fc6)
-
+</p>
