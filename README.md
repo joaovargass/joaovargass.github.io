@@ -34,7 +34,7 @@ With the GDPR definitions in mind, the collection of third and second-party data
 
 <ul>
   <li>The system has to authenticate with GCP’s BigQuery to access all databases</li>
-  <li>The system has to query all the consumers inside the corporate database that are potential grooming consumers for three different brands: Gillette, Gillette King C, and Braun</li>
+  <li>The system has to query all the consumers inside the corporate database that are potential grooming consumers for three different grooming brands</li>
   <li>The system has to query all the traits inside the corporate database that could be related to grooming products</li>
   <li>The system has to query all the events inside the corporate database that could be related to grooming products</li>
   <li>The system has to query all the data sources inside the corporate database that could be related to grooming consumers</li>
@@ -83,7 +83,7 @@ On this project, the student was provided with a set of business inquiries by th
   <li>The system has to define what is the optimal frequency cap for Display Advertisements in a period of a month;</li>
   <li>The system has to define what is the period of the day in which most of the sales related to a marketing campaign;</li>
   <li>The system must use the purchase rate, ROAS, number of impressions, and number of users as KPIs for evaluating what is the best frequency cap for Display Advertisements;</li>
-  <li>The system must divide the result for frequency cap and day parting by the selected brands in analysis, Braun and Gillette;</li>
+  <li>The system must divide the result for frequency cap and day parting by the selected grooming brands in analysis;</li>
   <li>The system must generate charts related to day parting, dividing the results by the hour of the day;</li>
   <li>The system must generate charts for frequency caps comparing the number of users that have seen an advertisement, the number of times the advertisement has been seen by the same users, with the purchase and ROAS rate related to them;</li>
   <li>The system must analyze how the different types of media vehicles work together and separately;</li>
@@ -117,7 +117,7 @@ The main objective of this project was to find on the Growing Families database 
 
 #### Selecting Marketing Program Numbers
 
-This analysis encompassed five distinct countries: Italy, France, Germany, Spain, and the United Kingdom. Each country is associated with its unique Marketing Program Number (MPN) within the corporate database, known as the Growing Families database, and for the Grooming brands. An MPN is an exclusive identifier assigned to a marketing plan devised by the company, encompassing all endeavors aimed at boosting sales for a specific brand or a group of brands, categorized by country. The Grooming brands used in the analysis were Gillette and Braun, each possessing its dedicated MPN corresponding to the country under examination. To retrieve the necessary Marketing Program Numbers, a query was directly executed from BigQuery’s interface.
+This analysis encompassed five distinct countries: Italy, France, Germany, Spain, and the United Kingdom. Each country is associated with its unique Marketing Program Number (MPN) within the corporate database, known as the Growing Families database, and for the Grooming brands. An MPN is an exclusive identifier assigned to a marketing plan devised by the company, encompassing all endeavors aimed at boosting sales for a specific brand or a group of brands, categorized by country. Each of the selected grooming brands possess its dedicated MPN corresponding to the country under examination. To retrieve the necessary Marketing Program Numbers, a query was directly executed from BigQuery’s interface.
 
 #### Queries Constrains
 
@@ -161,7 +161,7 @@ The results for each country are shown on the table below. <i>Total Users</i> is
         <td><b>Active Users</b></td>
         <td><b>Active and Opt-in Users</b></td>
         <td><b>Active and Opt-in Female %</b></td>
-        <td><b>Active and Opt-in Female %</b></td>
+        <td><b>Active and Opt-in Male %</b></td>
     </tr>
     <tr>
         <td>France</td>
@@ -213,3 +213,16 @@ The results for each country are shown on the table below. <i>Total Users</i> is
 By examining the results of the analysis, it is possible to see that for all countries the major part of consumers are female, and that for most of them most of the consumers are active and accepted to be contacted by email marketing. This means that most of the consumers are considered potential grooming consumers, which is the main point of this analysis. Germany and Italy are the only countries that have less then half the total consumer as potential grooming consumers, meaning that their consumers are not as active as on the other countries and that most of them do not agree to be contacted via email marketing.
 
 ### Project 2: Retail data and collaboration using Amazon Marketing Cloud
+
+The objective of this project was to analyze Amazon Marketing Cloud's consumer data to answer the business questions provided to the student. The implementation and results were divided in five topics, each one answering one of the questions.
+
+#### Frequency cap and day parting
+
+The objective of this part of the analysis was to understand, for Display Advertisements, what is the division of advertisements displayed during the day (day parting) and what is the optimal frequency cap to be set for displaying them, in other words, how many advertisements they should be displayed to a consumer for each marketing campaign set up on a period of 30 days to get the best results in terms of purchases. This is important to know because Amazon charges their advertisements per impression and per clicks (how many times the advertisement was clicked), meaning that a maximum value of times an advertisement is displayed need to be set up so that the ratio between the money spent on a campaign and the return in sales is the best.
+
+Two queries were used on AMC to get the information needed for the analysis, one for day parting and one for frequency cap. The queries were executed per month, meaning the date range selected on AMC was of a month, and also per brand. There were two grooming brands in analysis, which will be defined as GB1 (Grooming Brand 1) and GB2 (Grooming Brand 2) for legal reasons.
+
+For day parting, the main KPI used to understand how the campaign has performed is the purchase rate, which was calculated for each hour of the day. After calculating the purchase rate per hour, a chart was plot for each marketing campaign in analysis. On this chart, besides the purchase rate per hour, the percentage of the total daily impressions a campaign has received is displayed too, also divided by hour of the day. One of the results of this analysis for GB1 is shown on the chart below. It is possible to see that the time of the day that this specific campaign receives the most impressions is during the night, but the best purchase rate happens during the morning period.
+
+![Day parting chart for a Braun marketing campaign](https://github.com/joaovargass/joaovargass.github.io/assets/39708920/fe9a19a1-f7cc-458f-8ed4-a96d5f9b6fc6)
+
