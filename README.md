@@ -161,7 +161,7 @@ The results for each country are shown on the table below. <i>Total Users</i> is
         <td><b>Active Users</b></td>
         <td><b>Active and Opt-in Users</b></td>
         <td><b>Active and Opt-in Female %</b></td>
-        <td><b>Active and Opt-in Female %</b>/td>
+        <td><b>Active and Opt-in Female %</b></td>
     </tr>
     <tr>
         <td>France</td>
