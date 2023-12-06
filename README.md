@@ -282,7 +282,8 @@ To get a general picture of the use of both types of advertisements, the compari
 
 As a conclusion, it is noticeable that for GB1, the use of both advertisements is important. For GB2, the recommendation is that the overlap of media vehicles should be done, but not on all months. The focus should be on using both of the them on peak period. For all tables, M stands for thousand and MM for million.
 
-<table>
+<div align="Center"> 
+  <table>
   <caption>Table 2 - KPIs for GB1 split by exposure groups for the period of August 2021 until June 2022</caption>
   <thead>
     <tr>
@@ -348,9 +349,11 @@ As a conclusion, it is noticeable that for GB1, the use of both advertisements i
       <td>0.875%</td>
     </tr>
   </tbody>
-</table>
+</table> 
+</div>
 
-<table>
+<div align="Center"> 
+  <table>
   <caption>Table 3 - KPIs for GB2 split by exposure groups for the period of August 2021 until June 2022</caption>
   <thead>
     <tr>
@@ -416,13 +419,15 @@ As a conclusion, it is noticeable that for GB1, the use of both advertisements i
       <td>1.173%</td>
     </tr>
   </tbody>
-</table>
+</table> 
+</div>
 
 As a second phase of this analysis, it is imperative to explore the impact of introducing Share of Voice (SoV) as a new exposure group on sales performance. To achieve this, understanding the specific periods during which the company procured SoV packages for the selected brands is crucial, given that this type of advertisement is typically seasonal and procured during peak periods. Among the analyzed brands, GB1 is the only one that utilized this type of advertisement. Consequently, two peak months, July 2022 (Prime Day) and October 2022 (second Prime Day), were chosen to incorporate this new variable.
 
 New queries were executed on AMC, incorporating the new exposure group for each of the selected months. The outcomes are presented in Tables 4 and 5. It is discernible that the utilization of SoV packages proves advantageous during peak periods, exhibiting higher ROAS and Purchase Rates, particularly when combined with Search ads. Additionally, favorable results are observed when there is a triple overlap among the three exposure groups.
 
-<table>
+<div align="Center"> 
+  <table>
   <caption>Table 4 - KPIs for GB1 split by exposure groups in July 2022</caption>
   <thead>
     <tr>
@@ -492,9 +497,11 @@ New queries were executed on AMC, incorporating the new exposure group for each 
       <td>0.003%</td>
     </tr>
   </tbody>
-</table>
+</table> 
+</div>
 
-<table>
+<div align="Center"> 
+  <table>
   <caption>Table 5 - KPIs for GB1 split by exposure groups in October 2022</caption>
   <thead>
     <tr>
@@ -564,13 +571,15 @@ New queries were executed on AMC, incorporating the new exposure group for each 
       <td>0.001%</td>
     </tr>
   </tbody>
-</table>
+</table> 
+</div>
 
 #### Campaign paths
 
 The analysis focused on understanding various campaign paths leading to a purchase, considering the sequence and frequency of Search and Display ads. Key metrics for comparison included the starting and ending types of advertisements, path occurrences, purchase rate, ROAS, average path length, and the percentage of total occurrences for each path type. Tables 6 and 7 reveal that paths starting and ending with display ads have the highest occurrences but exhibit the lowest purchase rate. Conversely, paths starting with Search and ending with Display ads yield the best results in terms of ROAS and purchase rate.
 
-<table>
+<div align="Center"> 
+  <table>
   <caption>Table 6 - Path to purchase for GB1 campaigns</caption>
   <thead>
     <tr>
@@ -625,9 +634,11 @@ The analysis focused on understanding various campaign paths leading to a purcha
       <td>0.64%</td>
     </tr>
   </tbody>
-</table>
+</table> 
+</div>
 
-<table>
+<div align="Center"> 
+  <table>
   <caption>Table 7 - Path to purchase for GB2 campaigns</caption>
   <thead>
     <tr>
@@ -682,7 +693,8 @@ The analysis focused on understanding various campaign paths leading to a purcha
       <td>0.69%</td>
     </tr>
   </tbody>
-</table>
+</table> 
+</div>
 
 #### Time lag for purchase
 
@@ -706,7 +718,8 @@ In the analysis of consumer audiences on Amazon Marketing Cloud, the focus was o
 
 Table 8 displays GB1's top-performing segments, while Table 9 presents GB2's. Notably, the first two segments in both tables are broad and general, with the more specific descriptions in subsequent segments proving to be more crucial for the brands. Additionally, GB1 exhibits a higher percentage of consumers who are new to the brand compared to GB2. This suggests that GB2's consumers show a higher inclination towards repurchasing products.
 
-<table>
+<div align="Center"> 
+  <table>
     <caption>Table 8 - Best performing segments for GB1 in the period of August 2021 until June 2022</caption>
     <thead>
         <tr>
@@ -754,9 +767,11 @@ Table 8 displays GB1's top-performing segments, while Table 9 presents GB2's. No
             <td>3.5</td>
         </tr>
     </tbody>
-</table>
+</table> 
+</div>
 
-<table>
+<div align="Center"> 
+  <table>
     <caption>Table 9 - Best performing segments for GB2 in the period of August 2021 until June 2022</caption>
     <thead>
         <tr>
@@ -804,11 +819,13 @@ Table 8 displays GB1's top-performing segments, while Table 9 presents GB2's. No
             <td>2.2</td>
         </tr>
     </tbody>
-</table>
+</table> 
+</div>
 
 In the next phase of the analysis, the focus was on identifying the most lucrative age groups for each brand in terms of sales. This involved utilizing AMC segments that categorize consumers based on age. Additionally, the analysis explored the performance of different devices (Personal Computer, Phone, Tablet) for each age group. The results, presented in Table 10 for GB1 and Table 11 for GB2, highlight that age groups 35 to 44 and 45 to 54 contribute significantly to sales for both brands. Phones are the primary sales device for GB1, while Personal Computers (PCs) dominate for GB2. Notably, GB2's consumer base exhibits a higher proportion of repeat purchasers. An interesting observation is that Tablets, despite contributing less to sales, demonstrate the highest return on ad spend (ROAS) across most groups.
 
-<table>
+<div align="Center"> 
+  <table>
   <caption>Table 10 - Best performing age groups, divided by device, for GB1 in the period of August 2021 until June 2022</caption>
   <thead>
     <tr>
@@ -932,9 +949,11 @@ In the next phase of the analysis, the focus was on identifying the most lucrati
       <td>5.8</td>
     </tr>
   </tbody>
-</table>
+</table> 
+</div>
 
-<table>
+<div align="Center"> 
+  <table>
   <caption>Table 11 - Best performing age groups, divided by device, for GB2 in the period of August 2021 until June 2022</caption>
   <thead>
     <tr>
@@ -1058,4 +1077,5 @@ In the next phase of the analysis, the focus was on identifying the most lucrati
       <td>2.8</td>
     </tr>
   </tbody>
-</table>
+</table> 
+</div>
