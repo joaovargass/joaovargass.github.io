@@ -351,7 +351,7 @@ As a conclusion, it is noticeable that for GB1, the use of both advertisements i
 </table>
 
 <table>
-  <caption>KPIs for GB2 split by exposure groups for the period of August 2021 until June 2022</caption>
+  <caption>Table 3 - KPIs for GB2 split by exposure groups for the period of August 2021 until June 2022</caption>
   <thead>
     <tr>
       <th>Exposure Group</th>
@@ -414,6 +414,154 @@ As a conclusion, it is noticeable that for GB1, the use of both advertisements i
       <td>0.010%</td>
       <td>2.297%</td>
       <td>1.173%</td>
+    </tr>
+  </tbody>
+</table>
+
+As a second phase of this analysis, it is imperative to explore the impact of introducing Share of Voice (SoV) as a new exposure group on sales performance. To achieve this, understanding the specific periods during which the company procured SoV packages for the selected brands is crucial, given that this type of advertisement is typically seasonal and procured during peak periods. Among the analyzed brands, GB1 is the only one that utilized this type of advertisement. Consequently, two peak months, July 2022 (Prime Day) and October 2022 (second Prime Day), were chosen to incorporate this new variable.
+
+New queries were executed on AMC, incorporating the new exposure group for each of the selected months. The outcomes are presented in Tables 4 and 5. It is discernible that the utilization of SoV packages proves advantageous during peak periods, exhibiting higher ROAS and Purchase Rates, particularly when combined with Search ads. Additionally, favorable results are observed when there is a triple overlap among the three exposure groups.
+
+<table>
+  <caption>Table 4 - KPIs for GB1 split by exposure groups in July 2022</caption>
+  <thead>
+    <tr>
+      <th>Exposure Group</th>
+      <th>Total Impressions</th>
+      <th>Purchase Amount</th>
+      <th>Total Cost</th>
+      <th>ROAS</th>
+      <th>Purchase Rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Display</td>
+      <td>12.5MM</td>
+      <td>20.7M</td>
+      <td>38.9M</td>
+      <td>0.53</td>
+      <td>0.005%</td>
+    </tr>
+    <tr>
+      <td>Display x Search</td>
+      <td>189.8M</td>
+      <td>548.1M</td>
+      <td>39.7M</td>
+      <td>13.80</td>
+      <td>16.178%</td>
+    </tr>
+    <tr>
+      <td>Display x Search x SoV</td>
+      <td>132.2M</td>
+      <td>262.4M</td>
+      <td>27.9M</td>
+      <td>9.40</td>
+      <td>9.900%</td>
+    </tr>
+    <tr>
+      <td>Display x SoV</td>
+      <td>3.6MM</td>
+      <td>16.8M</td>
+      <td>31.5M</td>
+      <td>0.53</td>
+      <td>0.011%</td>
+    </tr>
+    <tr>
+      <td>Search</td>
+      <td>43.8M</td>
+      <td>522.9M</td>
+      <td>41.2M</td>
+      <td>12.69</td>
+      <td>18.591%</td>
+    </tr>
+    <tr>
+      <td>Search x SoV</td>
+      <td>3.7M</td>
+      <td>84.5M</td>
+      <td>5.3M</td>
+      <td>15.92</td>
+      <td>22.721%</td>
+    </tr>
+    <tr>
+      <td>SoV</td>
+      <td>213</td>
+      <td>0.0</td>
+      <td>25.0M</td>
+      <td>0.00</td>
+      <td>0.003%</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <caption>Table 5 - KPIs for GB1 split by exposure groups in October 2022</caption>
+  <thead>
+    <tr>
+      <th>Exposure Group</th>
+      <th>Total Impressions</th>
+      <th>Purchase Amount</th>
+      <th>Total Cost</th>
+      <th>ROAS</th>
+      <th>Purchase Rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Display</td>
+      <td>12.8MM</td>
+      <td>0.0</td>
+      <td>41.3M</td>
+      <td>0.00</td>
+      <td>0.002%</td>
+    </tr>
+    <tr>
+      <td>Display x Search</td>
+      <td>80.5M</td>
+      <td>195.4M</td>
+      <td>20.2M</td>
+      <td>9.67</td>
+      <td>12.730%</td>
+    </tr>
+    <tr>
+      <td>Display x Search x SoV</td>
+      <td>62.6M</td>
+      <td>122.8M</td>
+      <td>14.5M</td>
+      <td>8.50</td>
+      <td>8.251%</td>
+    </tr>
+    <tr>
+      <td>Display x SoV</td>
+      <td>4.3MM</td>
+      <td>0.0</td>
+      <td>41.1M</td>
+      <td>0.00</td>
+      <td>0.006%</td>
+    </tr>
+    <tr>
+      <td>Search</td>
+      <td>20.6M</td>
+      <td>199.5M</td>
+      <td>22.0M</td>
+      <td>9.07</td>
+      <td>15.621%</td>
+    </tr>
+    <tr>
+      <td>Search x SoV</td>
+      <td>1.3M</td>
+      <td>19.3M</td>
+      <td>2.0M</td>
+      <td>9.50</td>
+      <td>15.977%</td>
+    </tr>
+    <tr>
+      <td>SoV</td>
+      <td>50</td>
+      <td>3.8M</td>
+      <td>20.2M</td>
+      <td>0.19</td>
+      <td>0.001%</td>
     </tr>
   </tbody>
 </table>
