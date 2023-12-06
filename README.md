@@ -208,7 +208,7 @@ The results for each country are shown on the table below. <i>Total Users</i> is
         <td>89%</td>
         <td>11%</td>
     </tr>
-    <caption>Table 1 - Potential grooming consumers analysis results</caption>
+    <caption align="center">Table 1 - Potential grooming consumers analysis results</caption>
 </table>
 
 By examining the results of the analysis, it is possible to see that for all countries the major part of consumers are female, and that for most of them most of the consumers are active and accepted to be contacted by email marketing. This means that most of the consumers are considered potential grooming consumers, which is the main point of this analysis. Germany and Italy are the only countries that have less then half the total consumer as potential grooming consumers, meaning that their consumers are not as active as on the other countries and that most of them do not agree to be contacted via email marketing.
