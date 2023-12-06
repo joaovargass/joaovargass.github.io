@@ -844,7 +844,7 @@ In the next phase of the analysis, the focus was on identifying the most lucrati
       <td>5.2</td>
     </tr>
     <tr>
-      <td>Demo - Age 25-34</td>
+      <td rowspan="3">Demo - Age 25-34</td>
       <td>PC</td>
       <td>142M</td>
       <td>0.06%</td>
@@ -852,7 +852,6 @@ In the next phase of the analysis, the focus was on identifying the most lucrati
       <td>3.5</td>
     </tr>
     <tr>
-      <td>~</td>
       <td>Phone</td>
       <td>250M</td>
       <td>0.05%</td>
@@ -860,7 +859,6 @@ In the next phase of the analysis, the focus was on identifying the most lucrati
       <td>3.5</td>
     </tr>
     <tr>
-      <td>~</td>
       <td>Tablet</td>
       <td>1.2M</td>
       <td>0.06%</td>
@@ -868,7 +866,7 @@ In the next phase of the analysis, the focus was on identifying the most lucrati
       <td>3.4</td>
     </tr>
     <tr>
-      <td>Demo - Age 35-44</td>
+      <td rowspan="3">Demo - Age 35-44</td>
       <td>PC</td>
       <td>212M</td>
       <td>0.06%</td>
@@ -876,7 +874,6 @@ In the next phase of the analysis, the focus was on identifying the most lucrati
       <td>3.5</td>
     </tr>
     <tr>
-      <td>~</td>
       <td>Phone</td>
       <td>300M</td>
       <td>0.05%</td>
@@ -884,7 +881,6 @@ In the next phase of the analysis, the focus was on identifying the most lucrati
       <td>3.6</td>
     </tr>
     <tr>
-      <td>~</td>
       <td>Tablet</td>
       <td>3.3M</td>
       <td>0.04%</td>
@@ -892,7 +888,7 @@ In the next phase of the analysis, the focus was on identifying the most lucrati
       <td>4.4</td>
     </tr>
     <tr>
-      <td>Demo - Age 45-54</td>
+      <td rowspan="3">Demo - Age 45-54</td>
       <td>PC</td>
       <td>221M</td>
       <td>0.07%</td>
@@ -900,7 +896,6 @@ In the next phase of the analysis, the focus was on identifying the most lucrati
       <td>3.9</td>
     </tr>
     <tr>
-      <td>~</td>
       <td>Phone</td>
       <td>185M</td>
       <td>0.06%</td>
@@ -908,7 +903,6 @@ In the next phase of the analysis, the focus was on identifying the most lucrati
       <td>3.8</td>
     </tr>
     <tr>
-      <td>~</td>
       <td>Tablet</td>
       <td>2.9M</td>
       <td>0.05%</td>
@@ -916,7 +910,7 @@ In the next phase of the analysis, the focus was on identifying the most lucrati
       <td>4</td>
     </tr>
      <tr>
-      <td>Demo - Age 55-64</td>
+      <td rowspan="3">Demo - Age 55-64</td>
       <td>PC</td>
       <td>110M</td>
       <td>0.07%</td>
@@ -924,7 +918,6 @@ In the next phase of the analysis, the focus was on identifying the most lucrati
       <td>3.9</td>
     </tr>
     <tr>
-      <td>~</td>
       <td>Phone</td>
       <td>70M</td>
       <td>0.06%</td>
@@ -932,7 +925,6 @@ In the next phase of the analysis, the focus was on identifying the most lucrati
       <td>3.5</td>
     </tr>
     <tr>
-      <td>~</td>
       <td>Tablet</td>
       <td>2.5M</td>
       <td>0.06%</td>
