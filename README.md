@@ -278,7 +278,145 @@ Regarding GB1, it's evident that, for the majority of months, employing both Dis
   Figure 7 – ROAS for each exposure group by month – GB2
 </p>
 
-To get a general picture of the use of both types of advertisements, the comparison values were summed for all the months in analysis, and the results were put in a table for each brand. For both GB1 and GB2, most part of the impressions come from Display advertisements, but the ROAS and purchase rate for this exposure group are very low. For GB1, as shown on Table 2, using the combination of both types of advertisements gives the best results. For Gillette, observing the results on Table 23, the purchase rate is better when overlapping the advertisements, but the ROAS is better when using only Search ads.
+To get a general picture of the use of both types of advertisements, the comparison values were summed for all the months in analysis, and the results were put in a table for each brand. For both GB1 and GB2, most part of the impressions come from Display advertisements, but the ROAS and purchase rate for this exposure group are very low. For GB1, as shown on Table 2, using the combination of both types of advertisements gives the best results. For GB2, observing the results on Table 3, the purchase rate is better when overlapping the advertisements, but the ROAS is better when using only Search ads.
+
+As a conclusion, it is noticeable that for GB1, the use of both advertisements is important. For GB2, the recommendation is that the overlap of media vehicles should be done, but not on all months. The focus should be on using both of the them on peak period. For all tables, M stands for thousand and MM for million.
+
+<table>
+  <caption>Table 2 - KPIs for GB1 split by exposure groups for the period of August 2021 until June 2022</caption>
+  <thead>
+    <tr>
+      <th>Exposure Group</th>
+      <th>Display</th>
+      <th>Display x Search</th>
+      <th>Search</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total Impressions</td>
+      <td>107.3MM</td>
+      <td>70.5MM</td>
+      <td>96.9MM</td>
+    </tr>
+    <tr>
+      <td>Users that Purchased</td>
+      <td>2.3M</td>
+      <td>38.3M</td>
+      <td>51.4M</td>
+    </tr>
+    <tr>
+      <td>Purchase Amount</td>
+      <td>149.5M</td>
+      <td>6.0MM</td>
+      <td>5.5MM</td>
+    </tr>
+    <tr>
+      <td>Total Cost</td>
+      <td>325.1M</td>
+      <td>364.6M</td>
+      <td>415.5M</td>
+    </tr>
+    <tr>
+      <td>Unique Reach</td>
+      <td>33.6MM</td>
+      <td>2.3MM</td>
+      <td>5.9MM</td>
+    </tr>
+    <tr>
+      <td>Total Impressions %</td>
+      <td>39.04%</td>
+      <td>25.67%</td>
+      <td>35.28%</td>
+    </tr>
+    <tr>
+      <td>Purchase Amount %</td>
+      <td>1.28%</td>
+      <td>51.73%</td>
+      <td>46.98%</td>
+    </tr>
+    <tr>
+      <td>ROAS</td>
+      <td>0.46</td>
+      <td>16.51</td>
+      <td>13.16</td>
+    </tr>
+    <tr>
+      <td>Purchase Rate</td>
+      <td>0.007%</td>
+      <td>1.679%</td>
+      <td>0.875%</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <caption>KPIs for GB2 split by exposure groups for the period of August 2021 until June 2022</caption>
+  <thead>
+    <tr>
+      <th>Exposure Group</th>
+      <th>Display</th>
+      <th>Display x Search</th>
+      <th>Search</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total Impressions</td>
+      <td>34.0MM</td>
+      <td>13.8MM</td>
+      <td>35.8MM</td>
+    </tr>
+    <tr>
+      <td>Users that Purchased</td>
+      <td>1.5M</td>
+      <td>13.5M</td>
+      <td>41.9M</td>
+    </tr>
+    <tr>
+      <td>Purchase Amount</td>
+      <td>26.7M</td>
+      <td>488.7M</td>
+      <td>957.5M</td>
+    </tr>
+    <tr>
+      <td>Total Cost</td>
+      <td>106.7M</td>
+      <td>34.4M</td>
+      <td>56.3M</td>
+    </tr>
+    <tr>
+      <td>Unique Reach</td>
+      <td>14.6MM</td>
+      <td>586.7M</td>
+      <td>3.6MM</td>
+    </tr>
+    <tr>
+      <td>Total Impressions %</td>
+      <td>40.68%</td>
+      <td>16.49%</td>
+      <td>42.84%</td>
+    </tr>
+    <tr>
+      <td>Purchase Amount %</td>
+      <td>1.81%</td>
+      <td>33.18%</td>
+      <td>65.01%</td>
+    </tr>
+    <tr>
+      <td>ROAS</td>
+      <td>0.25</td>
+      <td>14.22</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>Purchase Rate</td>
+      <td>0.010%</td>
+      <td>2.297%</td>
+      <td>1.173%</td>
+    </tr>
+  </tbody>
+</table>
 
 
 
