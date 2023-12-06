@@ -700,4 +700,248 @@ In this analysis, consumer interactions with advertisements within 15 days of ex
   Figure 9 – Chart showing time lag until conversion event after seeing an advertisement for GB2
 </p>
 
+#### Consumer audiences
+
+In the analysis of consumer audiences on Amazon Marketing Cloud, the focus was on identifying high-performing segments for each brand, GB1 and GB2. Consumer audiences represent groups with similar purchasing patterns, enabling targeted advertising based on interests and improving overall performance compared to generic targeting. For each brand, the analysis involved displaying total product sales in euros, calculating ROAS, purchase rate, and the percentage of sales attributed to new-to-brand (NTB) users. NTB users are defined as those who haven't purchased any products from a brand in the last 12 months. The analysis covered the period from August 2021 to June 2022.
+
+Table 8 displays GB1's top-performing segments, while Table 9 presents GB2's. Notably, the first two segments in both tables are broad and general, with the more specific descriptions in subsequent segments proving to be more crucial for the brands. Additionally, GB1 exhibits a higher percentage of consumers who are new to the brand compared to GB2. This suggests that GB2's consumers show a higher inclination towards repurchasing products.
+
+<table>
+    <caption>Table 8 - Best performing segments for GB1 in the period of August 2021 until June 2022</caption>
+    <thead>
+        <tr>
+            <th>Segment Name</th>
+            <th>Total Product Sales</th>
+            <th>Purchase Rate</th>
+            <th>Percentage of NTB sales</th>
+            <th>ROAS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Demo - clients francais</td>
+            <td>2.98MM</td>
+            <td>0.06%</td>
+            <td>76%</td>
+            <td>3.6</td>
+        </tr>
+        <tr>
+            <td>Demo - Clients</td>
+            <td>2.74MM</td>
+            <td>0.06%</td>
+            <td>76%</td>
+            <td>3.7</td>
+        </tr>
+        <tr>
+            <td>LS - Acheteurs d'articles peu couteux</td>
+            <td>2.61MM</td>
+            <td>0.06%</td>
+            <td>76%</td>
+            <td>3.6</td>
+        </tr>
+        <tr>
+            <td>LS - Produits d’Entertainment</td>
+            <td>2.56MM</td>
+            <td>0.06%</td>
+            <td>76%</td>
+            <td>3.5</td>
+        </tr>
+        <tr>
+            <td>LS - Beauté (Santé et Soins du corps)</td>
+            <td>2.58MM</td>
+            <td>0.07%</td>
+            <td>75%</td>
+            <td>3.5</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <caption>Table 9 - Best performing segments for GB2 in the period of August 2021 until June 2022</caption>
+    <thead>
+        <tr>
+            <th>Segment Name</th>
+            <th>Total Product Sales</th>
+            <th>Purchase Rate</th>
+            <th>Percentage of NTB sales</th>
+            <th>ROAS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Demo - clients francais</td>
+            <td>302M</td>
+            <td>0.11%</td>
+            <td>55%</td>
+            <td>2.3</td>
+        </tr>
+        <tr>
+            <td>Demo - Clients</td>
+            <td>271M</td>
+            <td>0.12%</td>
+            <td>54%</td>
+            <td>2.3</td>
+        </tr>
+        <tr>
+            <td>LS - Acheteurs d'articles peu couteux</td>
+            <td>265M</td>
+            <td>0.13%</td>
+            <td>53%</td>
+            <td>2.3</td>
+        </tr>
+        <tr>
+            <td>LS - Produits d’Entertainment</td>
+            <td>263M</td>
+            <td>0.13%</td>
+            <td>53%</td>
+            <td>2.2</td>
+        </tr>
+        <tr>
+            <td>LS - Beauté (Santé et Soins du corps)</td>
+            <td>263M</td>
+            <td>0.16%</td>
+            <td>52%</td>
+            <td>2.2</td>
+        </tr>
+    </tbody>
+</table>
+
+In the next phase of the analysis, the focus was on identifying the most lucrative age groups for each brand in terms of sales. This involved utilizing AMC segments that categorize consumers based on age. Additionally, the analysis explored the performance of different devices (Personal Computer, Phone, Tablet) for each age group. The results, presented in Table 10 for GB1 and Table 11 for GB2, highlight that age groups 35 to 44 and 45 to 54 contribute significantly to sales for both brands. Phones are the primary sales device for GB1, while Personal Computers (PCs) dominate for GB2. Notably, GB2's consumer base exhibits a higher proportion of repeat purchasers. An interesting observation is that Tablets, despite contributing less to sales, demonstrate the highest return on ad spend (ROAS) across most groups.
+
+<table>
+  <caption>Best performing age groups, divided by device, for Braun in the period of August 2021 until June 2022</caption>
+  <thead>
+    <tr>
+      <th>Segment Name</th>
+      <th>Device Type</th>
+      <th>Total Product Sales</th>
+      <th>Purchase Rate</th>
+      <th>Percentage of NTB sales</th>
+      <th>ROAS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Demo - Age 18-24</td>
+      <td>PC</td>
+      <td>65M</td>
+      <td>0.07%</td>
+      <td>77%</td>
+      <td>3.6</td>
+    </tr>
+    <tr>
+      <td>Phone</td>
+      <td>90M</td>
+      <td>0.05%</td>
+      <td>81%</td>
+      <td>3.6</td>
+    </tr>
+    <tr>
+      <td>Tablet</td>
+      <td>1.7M</td>
+      <td>0.08%</td>
+      <td>67%</td>
+      <td>5.2</td>
+    </tr>
+    <tr>
+      <td>Demo - Age 25-34</td>
+      <td>PC</td>
+      <td>142M</td>
+      <td>0.06%</td>
+      <td>78%</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <td>~</td>
+      <td>Phone</td>
+      <td>250M</td>
+      <td>0.05%</td>
+      <td>81%</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <td>~</td>
+      <td>Tablet</td>
+      <td>1.2M</td>
+      <td>0.06%</td>
+      <td>77%</td>
+      <td>3.4</td>
+    </tr>
+    <tr>
+      <td>Demo - Age 35-44</td>
+      <td>PC</td>
+      <td>212M</td>
+      <td>0.06%</td>
+      <td>76%</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <td>~</td>
+      <td>Phone</td>
+      <td>300M</td>
+      <td>0.05%</td>
+      <td>81%</td>
+      <td>3.6</td>
+    </tr>
+    <tr>
+      <td>~</td>
+      <td>Tablet</td>
+      <td>3.3M</td>
+      <td>0.04%</td>
+      <td>82%</td>
+      <td>4.4</td>
+    </tr>
+    <tr>
+      <td>Demo - Age 45-54</td>
+      <td>PC</td>
+      <td>221M</td>
+      <td>0.07%</td>
+      <td>74%</td>
+      <td>3.9</td>
+    </tr>
+    <tr>
+      <td>~</td>
+      <td>Phone</td>
+      <td>185M</td>
+      <td>0.06%</td>
+      <td>76%</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>~</td>
+      <td>Tablet</td>
+      <td>2.9M</td>
+      <td>0.05%</td>
+      <td>86%</td>
+      <td>4</td>
+    </tr>
+     <tr>
+      <td>Demo - Age 55-64</td>
+      <td>PC</td>
+      <td>110M</td>
+      <td>0.07%</td>
+      <td>69%</td>
+      <td>3.9</td>
+    </tr>
+    <tr>
+      <td>~</td>
+      <td>Phone</td>
+      <td>70M</td>
+      <td>0.06%</td>
+      <td>75%</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <td>~</td>
+      <td>Tablet</td>
+      <td>2.5M</td>
+      <td>0.06%</td>
+      <td>84%</td>
+      <td>5.8</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
 
