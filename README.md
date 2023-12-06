@@ -235,22 +235,26 @@ Figures 2 and 3 illustrate the outcomes of the initial phase of the analysis for
 
 <p align="center">
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/2f9f420e-f5b2-4fe6-9ebe-48c4e248016c">
-  <figcaption align="center">Figure 2 – Frequency cap chart for GB1 shavers in November 2021 – Purchase rate vs Percentage of users in frequency bucket (groups of 5)</figcaption>
+  <br>
+  Figure 2 – Frequency cap chart for GB1 shavers in November 2021 – Purchase rate vs Percentage of users in frequency bucket (groups of 5)
 </p>
 
 <p align="center">
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/cca76246-23b7-48c1-8f91-04d6209f627e">
-  <figcaption>Figure 3 – Frequency cap for GB1 shavers in November 2021 – Purchase rate vs ROAS per frequency bucket (groups of 5)</figcaption>
+  <br>
+  Figure 3 – Frequency cap for GB1 shavers in November 2021 – Purchase rate vs ROAS per frequency bucket (groups of 5)
 </p>
 
 <p align="center">
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/81127e99-cb32-4ec4-8a94-7a6ae3d776ed">
-  <figcaption>Figure 4 – Frequency cap for GB1 shavers in November 2021 – Purchase rate vs Percentage of users in frequency bucket (singular)</figcaption>
+  <br>
+  Figure 4 – Frequency cap for GB1 shavers in November 2021 – Purchase rate vs Percentage of users in frequency bucket (singular)
 </p>
 
 <p align="center">
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/ea5c1277-4549-4c2f-9a02-38162bd0b8b6">
-  <figcaption>Figure 5 – Frequency cap for GB1 shavers in November 2021 – Purchase rate vs ROAS per frequency bucket (singular)</figcaption>
+  <br>
+  Figure 5 – Frequency cap for GB1 shavers in November 2021 – Purchase rate vs ROAS per frequency bucket (singular)
 </p>
 
 
