@@ -225,6 +225,7 @@ Two queries were used on AMC to get the information needed for the analysis, one
 For day parting, the main KPI used to understand how the campaign has performed is the purchase rate, which was calculated for each hour of the day. After calculating the purchase rate per hour, a chart was plot for each marketing campaign in analysis. On this chart, besides the purchase rate per hour, the percentage of the total daily impressions a campaign has received is displayed too, also divided by hour of the day. One of the results of this analysis for GB1 is shown on the chart below. It is possible to see that the time of the day that this specific campaign receives the most impressions is during the night, but the best purchase rate happens during the morning period.
 <p align="center">
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/fe9a19a1-f7cc-458f-8ed4-a96d5f9b6fc6">
+  <br>
   Figure 1 – Day parting chart for a GB1 marketing campaign
 </p>
 
