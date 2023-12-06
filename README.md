@@ -809,7 +809,7 @@ Table 8 displays GB1's top-performing segments, while Table 9 presents GB2's. No
 In the next phase of the analysis, the focus was on identifying the most lucrative age groups for each brand in terms of sales. This involved utilizing AMC segments that categorize consumers based on age. Additionally, the analysis explored the performance of different devices (Personal Computer, Phone, Tablet) for each age group. The results, presented in Table 10 for GB1 and Table 11 for GB2, highlight that age groups 35 to 44 and 45 to 54 contribute significantly to sales for both brands. Phones are the primary sales device for GB1, while Personal Computers (PCs) dominate for GB2. Notably, GB2's consumer base exhibits a higher proportion of repeat purchasers. An interesting observation is that Tablets, despite contributing less to sales, demonstrate the highest return on ad spend (ROAS) across most groups.
 
 <table>
-  <caption>Best performing age groups, divided by device, for Braun in the period of August 2021 until June 2022</caption>
+  <caption>Table 10 - Best performing age groups, divided by device, for GB1 in the period of August 2021 until June 2022</caption>
   <thead>
     <tr>
       <th>Segment Name</th>
@@ -934,3 +934,128 @@ In the next phase of the analysis, the focus was on identifying the most lucrati
   </tbody>
 </table>
 
+<table>
+  <caption>Table 11 - Best performing age groups, divided by device, for GB2 in the period of August 2021 until June 2022</caption>
+  <thead>
+    <tr>
+      <th>Segment Name</th>
+      <th>Device Type</th>
+      <th>Total Product Sales</th>
+      <th>Purchase Rate</th>
+      <th>Percentage of NTB sales</th>
+      <th>ROAS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Demo - Age 18-24</td>
+      <td>PC</td>
+      <td>12M</td>
+      <td>0.15%</td>
+      <td>53%</td>
+      <td>1.9</td>
+    </tr>
+    <tr>
+      <td>Phone</td>
+      <td>3.7M</td>
+      <td>0.11%</td>
+      <td>64%</td>
+      <td>1.8</td>
+    </tr>
+    <tr>
+      <td>Tablet</td>
+      <td>71</td>
+      <td>0.17%</td>
+      <td>22%</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Demo - Age 25-34</td>
+      <td>PC</td>
+      <td>23M</td>
+      <td>0.16%</td>
+      <td>56%</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <td>Phone</td>
+      <td>11M</td>
+      <td>0.12%</td>
+      <td>63%</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <td>Tablet</td>
+      <td>28</td>
+      <td>0.11%</td>
+      <td>100%</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Demo - Age 35-44</td>
+      <td>PC</td>
+      <td>37M</td>
+      <td>0.15%</td>
+      <td>55%</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <td>Phone</td>
+      <td>15M</td>
+      <td>0.11%</td>
+      <td>58%</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <td>Tablet</td>
+      <td>136</td>
+      <td>0.11%</td>
+      <td>13%</td>
+      <td>2.8</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Demo - Age 45-54</td>
+      <td>PC</td>
+      <td>43M</td>
+      <td>0.16%</td>
+      <td>51%</td>
+      <td>2.4</td>
+    </tr>
+    <tr>
+      <td>Phone</td>
+      <td>10M</td>
+      <td>0.13%</td>
+      <td>59%</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Tablet</td>
+      <td>141</td>
+      <td>0.12%</td>
+      <td>63%</td>
+      <td>4.2</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Demo - Age 55-64</td>
+      <td>PC</td>
+      <td>23M</td>
+      <td>0.17%</td>
+      <td>47%</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>Phone</td>
+      <td>4.7M</td>
+      <td>0.15%</td>
+      <td>57%</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Tablet</td>
+      <td>134</td>
+      <td>0.07%</td>
+      <td>67%</td>
+      <td>2.8</td>
+    </tr>
+  </tbody>
+</table>
