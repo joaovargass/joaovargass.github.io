@@ -153,7 +153,8 @@ In this section, only the results containing the total number of potential groom
 
 The results for each country are shown on the table below. <i>Total Users</i> is the number of the users that have gender and age information and that are related to at least one grooming golden trait, event or source. <i>Opt-in users</i> are the <i>Total Users</i> with the restriction of having agreed to receiving email marketing communications. <i>Active users</i> are the <i>Total Users</i> with the restriction of being active on the past 12 months. <i>Active and Opt-in Users</i> are the number of users with both restrictions. The percentage of Male and Female consumers with both restrictions is also quantified on the table below.
 
-<table align-items="center">
+<table>
+    <caption>Table 1 - Potential grooming consumers analysis results</caption>
     <tr>
         <td><b>Country</b></td>
         <td><b>Total Users</b></td>
@@ -208,7 +209,6 @@ The results for each country are shown on the table below. <i>Total Users</i> is
         <td>89%</td>
         <td>11%</td>
     </tr>
-    <caption>Table 1 - Potential grooming consumers analysis results</caption>
 </table>
 
 By examining the results of the analysis, it is possible to see that for all countries the major part of consumers are female, and that for most of them most of the consumers are active and accepted to be contacted by email marketing. This means that most of the consumers are considered potential grooming consumers, which is the main point of this analysis. Germany and Italy are the only countries that have less then half the total consumer as potential grooming consumers, meaning that their consumers are not as active as on the other countries and that most of them do not agree to be contacted via email marketing.
