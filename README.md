@@ -208,6 +208,7 @@ The results for each country are shown on the table below. <i>Total Users</i> is
         <td>89%</td>
         <td>11%</td>
     </tr>
+    <caption>Table 1 - Potential grooming consumers analysis results</caption>
 </table>
 
 By examining the results of the analysis, it is possible to see that for all countries the major part of consumers are female, and that for most of them most of the consumers are active and accepted to be contacted by email marketing. This means that most of the consumers are considered potential grooming consumers, which is the main point of this analysis. Germany and Italy are the only countries that have less then half the total consumer as potential grooming consumers, meaning that their consumers are not as active as on the other countries and that most of them do not agree to be contacted via email marketing.
@@ -256,6 +257,28 @@ Figures 2 and 3 illustrate the outcomes of the initial phase of the analysis for
   <br>
   Figure 5 – Frequency cap for GB1 shavers in November 2021 – Purchase rate vs ROAS per frequency bucket (singular)
 </p>
+
+#### Media vehicles
+
+In this segment of the analysis, the aim was to understand the collective and individual effectiveness of different types of advertisements. The exposure groups, or media types, chosen for comparison included Sponsored Advertisements (Search Ads), Display Advertisements, and Share of Voice packages. The objective was to assess the performance of these three advertisement types during peak periods (Black Friday and Prime Day) and off-peak periods, determining if their utilization justifies the expenditure. The analysis involved querying AMC for all the specified months relevant to the investigation.
+
+In the initial analysis, the focus was on comparing Sponsored Advertisements and Display Advertisements, with Share of Voice packages earmarked for future examination. Each comparison was conducted on a brand basis, with the selected brands being GB1 and GB2. Upon retrieving the query results for the chosen months, key performance indicators (KPIs) used to gauge success, including ROAS and purchase rate, along with other values relevant for comparison, such as the percentage of total impressions and percentage of total sales attributed to an exposure group for that period, were calculated. These KPIs were computed individually for each brand and exposure group. Subsequently, a chart was generated to visually represent the ROAS for each brand in the selected month and exposure group. The outcomes are depicted in Figures 6 and 7, covering the period from August 2021 to June 2022.
+
+Regarding GB1, it's evident that, for the majority of months, employing both Display and Search advertisements proves advantageous in terms of ROAS. Display advertisements consistently exhibit lower ROAS values when used independently, primarily due to their high impression numbers, as they are predominantly employed for maximizing reach. In the case of GB2, the effectiveness of utilizing both Search and Display advertisements is observed only in particular months. There are instances when Display advertisements are not utilized at all, corresponding to months where the ROAS chart displays zero values for Display.
+
+<p align="center">
+  <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/6ecb7f14-ed88-4883-ba04-e1c94fc0d0b7">
+  <br>
+  Figure 6 – ROAS for each exposure group by month – GB1
+</p>
+
+<p align="center">
+  <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/b1b653bc-e47b-4b57-bba3-e0ab48b3a171">
+  <br>
+  Figure 7 – ROAS for each exposure group by month – GB2
+</p>
+
+To get a general picture of the use of both types of advertisements, the comparison values were summed for all the months in analysis, and the results were put in a table for each brand. For both GB1 and GB2, most part of the impressions come from Display advertisements, but the ROAS and purchase rate for this exposure group are very low. For GB1, as shown on Table 2, using the combination of both types of advertisements gives the best results. For Gillette, observing the results on Table 23, the purchase rate is better when overlapping the advertisements, but the ROAS is better when using only Search ads.
 
 
 
