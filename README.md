@@ -684,5 +684,20 @@ The analysis focused on understanding various campaign paths leading to a purcha
   </tbody>
 </table>
 
+#### Time lag for purchase
+
+In this analysis, consumer interactions with advertisements within 15 days of exposure were examined. The study focused on three main actions: Purchase, Add to Shopping Cart, and See Detail Page after viewing an advertisement. The data, spanning 12 months and divided into 15-day intervals, revealed insights such as the time elapsed after ad exposure, user actions over time, and the percentage of total purchases within the 15-day period. Analyzing GB1 and GB2 from June 2021 to April 2022, Figures 8 and 9 illustrated similar consumer behavior, emphasizing a significant conversion peak two days after ad exposure, contributing to over 50% of total sales during that period.
+
+<p align="center">
+  <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/db11c552-bef2-4929-add1-86ebe6eeaece">
+  <br>
+  Figure 8 – Chart showing time lag until conversion event after seeing an advertisement for GB1
+</p>
+
+<p align="center">
+  <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/65a8c4ff-08a3-4283-accf-ac3162cdbb00">
+  <br>
+  Figure 9 – Chart showing time lag until conversion event after seeing an advertisement for GB2
+</p>
 
 
