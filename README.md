@@ -234,7 +234,7 @@ Figures 2 and 3 illustrate the outcomes of the initial phase of the analysis for
 
 <p align="center">
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/2f9f420e-f5b2-4fe6-9ebe-48c4e248016c">
-  <figcaption>Figure 2 – Frequency cap chart for GB1 shavers in November 2021 – Purchase rate vs Percentage of users in frequency bucket (groups of 5)</figcaption>
+  <figcaption align="center">Figure 2 – Frequency cap chart for GB1 shavers in November 2021 – Purchase rate vs Percentage of users in frequency bucket (groups of 5)</figcaption>
 </p>
 
 <p align="center">
