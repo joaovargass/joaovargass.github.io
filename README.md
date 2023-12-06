@@ -566,5 +566,123 @@ New queries were executed on AMC, incorporating the new exposure group for each 
   </tbody>
 </table>
 
+#### Campaign paths
+
+The analysis focused on understanding various campaign paths leading to a purchase, considering the sequence and frequency of Search and Display ads. Key metrics for comparison included the starting and ending types of advertisements, path occurrences, purchase rate, ROAS, average path length, and the percentage of total occurrences for each path type. Tables 6 and 7 reveal that paths starting and ending with display ads have the highest occurrences but exhibit the lowest purchase rate. Conversely, paths starting with Search and ending with Display ads yield the best results in terms of ROAS and purchase rate.
+
+<table>
+  <caption>Table 6 - Path to purchase for GB1 campaigns</caption>
+  <thead>
+    <tr>
+      <th>Starts With</th>
+      <th>Display</th>
+      <th>Display</th>
+      <th>Search</th>
+      <th>Search</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ends With</td>
+      <td>Display</td>
+      <td>Search</td>
+      <td>Display</td>
+      <td>Search</td>
+    </tr>
+    <tr>
+      <td>Path Occurrence</td>
+      <td>38MM</td>
+      <td>48M</td>
+      <td>134M</td>
+      <td>245M</td>
+    </tr>
+    <tr>
+      <td>ROAS</td>
+      <td>7.31</td>
+      <td>8.24</td>
+      <td>10.69</td>
+      <td>4.95</td>
+    </tr>
+    <tr>
+      <td>Purchase Rate</td>
+      <td>0.016%</td>
+      <td>1.114%</td>
+      <td>1.808%</td>
+      <td>4.749%</td>
+    </tr>
+    <tr>
+      <td>Average Path Length</td>
+      <td>1.4</td>
+      <td>3.1</td>
+      <td>3.1</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>Path Occurrence %</td>
+      <td>98.89%</td>
+      <td>0.13%</td>
+      <td>0.35%</td>
+      <td>0.64%</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <caption>Table 7 - Path to purchase for GB2 campaigns</caption>
+  <thead>
+    <tr>
+      <th>Starts With</th>
+      <th>Display</th>
+      <th>Display</th>
+      <th>Search</th>
+      <th>Search</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ends With</td>
+      <td>Display</td>
+      <td>Search</td>
+      <td>Display</td>
+      <td>Search</td>
+    </tr>
+    <tr>
+      <td>Path Occurrence</td>
+      <td>12MM</td>
+      <td>5.8M</td>
+      <td>19M</td>
+      <td>85M</td>
+    </tr>
+    <tr>
+      <td>ROAS</td>
+      <td>2.76</td>
+      <td>15.36</td>
+      <td>19.31</td>
+      <td>16.44</td>
+    </tr>
+    <tr>
+      <td>Purchase Rate</td>
+      <td>0.021%</td>
+      <td>4.079%</td>
+      <td>5.522%</td>
+      <td>17.5%</td>
+    </tr>
+    <tr>
+      <td>Average Path Length</td>
+      <td>1</td>
+      <td>2.5</td>
+      <td>2.4</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td>Path Occurrence %</td>
+      <td>99.11%</td>
+      <td>0.05%</td>
+      <td>0.15%</td>
+      <td>0.69%</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
