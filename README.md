@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
+<style></style>
   
 # Marketing Technology: a study on compliance, acquisition and usage of first-party data in digital marketing
 
