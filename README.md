@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 # Marketing Technology: a study on compliance, acquisition and usage of first-party data in digital marketing
 
 <div align="justify">
@@ -1155,3 +1161,6 @@ In the next phase of the analysis, the focus was on identifying the most lucrati
   </tbody>
 </table> 
 </div>
+
+</body>
+</html>
