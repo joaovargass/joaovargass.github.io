@@ -278,7 +278,7 @@ For day parting, the main KPI used to understand how the campaign has performed 
 </div>
 
 <div align="center">
-  <font size=2>Figure 1 – Day parting chart for a GB1 marketing campaign</font>
+  <font size=3>Figure 1 – Day parting chart for a GB1 marketing campaign</font>
   <br>
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/fe9a19a1-f7cc-458f-8ed4-a96d5f9b6fc6">
 </div>
