@@ -278,7 +278,7 @@ For day parting, the main KPI used to understand how the campaign has performed 
 </div>
 
 <div align="center">
-  <font size=3 style="italic">Figure 1 – Day parting chart for a GB1 marketing campaign</font>
+  <font size=3><em>Figure 1 – Day parting chart for a GB1 marketing campaign</em></font>
   <br>
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/fe9a19a1-f7cc-458f-8ed4-a96d5f9b6fc6">
 </div>
@@ -290,27 +290,27 @@ Figures 2 and 3 illustrate the outcomes of the initial phase of the analysis for
 </div>
 
 <div align="center">
+  <font size=3><em>Figure 2 – Frequency cap chart for GB1 shavers in November 2021 – Purchase rate vs Percentage of users in frequency bucket (groups of 5)</em></font>
+  <br>
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/2f9f420e-f5b2-4fe6-9ebe-48c4e248016c">
-  <br>
-  Figure 2 – Frequency cap chart for GB1 shavers in November 2021 – Purchase rate vs Percentage of users in frequency bucket (groups of 5)
 </div>
 
 <div align="center">
+  <font size=3><em>Figure 3 – Frequency cap for GB1 shavers in November 2021 – Purchase rate vs ROAS per frequency bucket (groups of 5)</em></font>
+  <br>
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/cca76246-23b7-48c1-8f91-04d6209f627e">
-  <br>
-  Figure 3 – Frequency cap for GB1 shavers in November 2021 – Purchase rate vs ROAS per frequency bucket (groups of 5)
 </div>
 
 <div align="center">
+  <font size=3><em>Figure 4 – Frequency cap for GB1 shavers in November 2021 – Purchase rate vs Percentage of users in frequency bucket (singular)</em></font>
+  <br>
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/81127e99-cb32-4ec4-8a94-7a6ae3d776ed">
-  <br>
-  Figure 4 – Frequency cap for GB1 shavers in November 2021 – Purchase rate vs Percentage of users in frequency bucket (singular)
 </div>
 
 <div align="center">
-  <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/ea5c1277-4549-4c2f-9a02-38162bd0b8b6">
+  <font size=3><em>Figure 5 – Frequency cap for GB1 shavers in November 2021 – Purchase rate vs ROAS per frequency bucket (singular)</em></font>
   <br>
-  Figure 5 – Frequency cap for GB1 shavers in November 2021 – Purchase rate vs ROAS per frequency bucket (singular)
+  <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/ea5c1277-4549-4c2f-9a02-38162bd0b8b6">  
 </div>
 
 #### Media vehicles
@@ -325,15 +325,15 @@ Regarding GB1, it's evident that, for the majority of months, employing both Dis
 
 
 <div align="center">
-  <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/6ecb7f14-ed88-4883-ba04-e1c94fc0d0b7">
+  <font size=3><em>Figure 6 – ROAS for each exposure group by month – GB1</em></font>
   <br>
-  Figure 6 – ROAS for each exposure group by month – GB1
+  <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/6ecb7f14-ed88-4883-ba04-e1c94fc0d0b7">
 </div>
 
 <div align="center">
-  <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/b1b653bc-e47b-4b57-bba3-e0ab48b3a171">
+  <font size=3><em>Figure 7 – ROAS for each exposure group by month – GB2</em></font>
   <br>
-  Figure 7 – ROAS for each exposure group by month – GB2
+  <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/b1b653bc-e47b-4b57-bba3-e0ab48b3a171"> 
 </div>
 
 <div align="justify">
@@ -771,15 +771,15 @@ In this analysis, consumer interactions with advertisements within 15 days of ex
 
 
 <div align="center">
-  <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/db11c552-bef2-4929-add1-86ebe6eeaece">
+  <font size=3><em>Figure 8 – Chart showing time lag until conversion event after seeing an advertisement for GB1</em></font>
   <br>
-  Figure 8 – Chart showing time lag until conversion event after seeing an advertisement for GB1
+  <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/db11c552-bef2-4929-add1-86ebe6eeaece">
 </div>
 
 <div align="center">
-  <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/65a8c4ff-08a3-4283-accf-ac3162cdbb00">
+  <font size=3><em>Figure 9 – Chart showing time lag until conversion event after seeing an advertisement for GB2</em></font>
   <br>
-  Figure 9 – Chart showing time lag until conversion event after seeing an advertisement for GB2
+  <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/65a8c4ff-08a3-4283-accf-ac3162cdbb00">
 </div>
 
 #### Consumer audiences
