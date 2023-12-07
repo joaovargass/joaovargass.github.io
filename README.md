@@ -1,12 +1,12 @@
 # Marketing Technology: a study on compliance, acquisition and usage of first-party data in digital marketing
 
-<div text-align="justify">
+<div align="justify">
 Projeto de formatura do aluno João Vitor Vargas Soares para conclusão do curso de Engenharia de Computação da Escola Politécnica da USP feito em inglês.
 </div>
 
 ## Objectives
 
-<div text-align="justify">
+<div align="justify">
 This is a project made from the student's internship experience in the double degree exchange program at the University of Grenoble INP in France. It involves adapting the End of Studies project undertaken at a consumers goods multinational, with a specific emphasis on exploring the interplay between data analysis and digital marketing in the contemporary landscape marked by the enforcement of new digital marketing compliance regulations such as GDPR. The internship comprised two primary projects: the acquisition and activation of consumer first-party data, as well as the exploration of retail data and collaboration through the utilization of Amazon Marketing Cloud.
 </div>
 
