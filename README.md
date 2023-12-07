@@ -1,11 +1,3 @@
-<style>
-  .caption {
-    font-size:200px;
-    width: 100%;
-    font-style: italic;
-  }
-</style>
-  
 # Marketing Technology: a study on compliance, acquisition and usage of first-party data in digital marketing
 
 <div align="justify">
@@ -332,7 +324,7 @@ Regarding GB1, it's evident that, for the majority of months, employing both Dis
 </div>
 
 
-<div class="caption">
+<div align="center">
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/6ecb7f14-ed88-4883-ba04-e1c94fc0d0b7">
   <br>
   Figure 6 – ROAS for each exposure group by month – GB1
