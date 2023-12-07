@@ -199,7 +199,7 @@ The results for each country are shown on the table below. <i>Total Users</i> is
 
 <div align="Center">
 <table>
-    <caption><font size=2><em>Table 1 - Potential grooming consumers analysis results</em></font></caption>
+    <caption><font size=2.5><em>Table 1 - Potential grooming consumers analysis results</em></font></caption>
     <tr>
         <td><b>Country</b></td>
         <td><b>Total Users</b></td>
@@ -278,7 +278,7 @@ For day parting, the main KPI used to understand how the campaign has performed 
 </div>
 
 <div align="center">
-  <font size=2><em>Figure 1 – Day parting chart for a GB1 marketing campaign</em></font>
+  <font size=2.5><em>Figure 1 – Day parting chart for a GB1 marketing campaign</em></font>
   <br>
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/fe9a19a1-f7cc-458f-8ed4-a96d5f9b6fc6">
 </div>
@@ -290,25 +290,25 @@ Figures 2 and 3 illustrate the outcomes of the initial phase of the analysis for
 </div>
 
 <div align="center">
-  <font size=2><em>Figure 2 – Frequency cap chart for GB1 shavers in November 2021 – Purchase rate vs Percentage of users in frequency bucket (groups of 5)</em></font>
+  <font size=2.5><em>Figure 2 – Frequency cap chart for GB1 shavers in November 2021 – Purchase rate vs Percentage of users in frequency bucket (groups of 5)</em></font>
   <br>
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/2f9f420e-f5b2-4fe6-9ebe-48c4e248016c">
 </div>
 
 <div align="center">
-  <font size=2><em>Figure 3 – Frequency cap for GB1 shavers in November 2021 – Purchase rate vs ROAS per frequency bucket (groups of 5)</em></font>
+  <font size=2.5><em>Figure 3 – Frequency cap for GB1 shavers in November 2021 – Purchase rate vs ROAS per frequency bucket (groups of 5)</em></font>
   <br>
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/cca76246-23b7-48c1-8f91-04d6209f627e">
 </div>
 
 <div align="center">
-  <font size=2><em>Figure 4 – Frequency cap for GB1 shavers in November 2021 – Purchase rate vs Percentage of users in frequency bucket (singular)</em></font>
+  <font size=2.5><em>Figure 4 – Frequency cap for GB1 shavers in November 2021 – Purchase rate vs Percentage of users in frequency bucket (singular)</em></font>
   <br>
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/81127e99-cb32-4ec4-8a94-7a6ae3d776ed">
 </div>
 
 <div align="center">
-  <font size=2><em>Figure 5 – Frequency cap for GB1 shavers in November 2021 – Purchase rate vs ROAS per frequency bucket (singular)</em></font>
+  <font size=2.5><em>Figure 5 – Frequency cap for GB1 shavers in November 2021 – Purchase rate vs ROAS per frequency bucket (singular)</em></font>
   <br>
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/ea5c1277-4549-4c2f-9a02-38162bd0b8b6">  
 </div>
@@ -325,13 +325,13 @@ Regarding GB1, it's evident that, for the majority of months, employing both Dis
 
 
 <div align="center">
-  <font size=2><em>Figure 6 – ROAS for each exposure group by month – GB1</em></font>
+  <font size=2.5><em>Figure 6 – ROAS for each exposure group by month – GB1</em></font>
   <br>
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/6ecb7f14-ed88-4883-ba04-e1c94fc0d0b7">
 </div>
 
 <div align="center">
-  <font size=2><em>Figure 7 – ROAS for each exposure group by month – GB2</em></font>
+  <font size=2.5><em>Figure 7 – ROAS for each exposure group by month – GB2</em></font>
   <br>
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/b1b653bc-e47b-4b57-bba3-e0ab48b3a171"> 
 </div>
@@ -345,7 +345,7 @@ As a conclusion, it is noticeable that for GB1, the use of both advertisements i
 
 <div align="Center"> 
   <table>
-  <caption><font size=2><em>Table 2 - KPIs for GB1 split by exposure groups for the period of August 2021 until June 2022</em></font></caption>
+  <caption><font size=2.5><em>Table 2 - KPIs for GB1 split by exposure groups for the period of August 2021 until June 2022</em></font></caption>
   <thead>
     <tr>
       <th>Exposure Group</th>
@@ -415,7 +415,7 @@ As a conclusion, it is noticeable that for GB1, the use of both advertisements i
 
 <div align="Center"> 
   <table>
-  <caption><font size=2><em>Table 3 - KPIs for GB2 split by exposure groups for the period of August 2021 until June 2022</em></font></caption>
+  <caption><font size=2.5><em>Table 3 - KPIs for GB2 split by exposure groups for the period of August 2021 until June 2022</em></font></caption>
   <thead>
     <tr>
       <th>Exposure Group</th>
@@ -492,7 +492,7 @@ New queries were executed on AMC, incorporating the new exposure group for each 
 
 <div align="Center"> 
   <table>
-  <caption><font size=2><em>Table 4 - KPIs for GB1 split by exposure groups in July 2022</em></font></caption>
+  <caption><font size=2.5><em>Table 4 - KPIs for GB1 split by exposure groups in July 2022</em></font></caption>
   <thead>
     <tr>
       <th>Exposure Group</th>
@@ -566,7 +566,7 @@ New queries were executed on AMC, incorporating the new exposure group for each 
 
 <div align="Center"> 
   <table>
-  <caption><font size=2><em>Table 5 - KPIs for GB1 split by exposure groups in October 2022</em></font></caption>
+  <caption><font size=2.5><em>Table 5 - KPIs for GB1 split by exposure groups in October 2022</em></font></caption>
   <thead>
     <tr>
       <th>Exposure Group</th>
@@ -647,7 +647,7 @@ The analysis focused on understanding various campaign paths leading to a purcha
 
 <div align="Center"> 
   <table>
-  <caption><font size=2><em>Table 6 - Path to purchase for GB1 campaigns</em></font></caption>
+  <caption><font size=2.5><em>Table 6 - Path to purchase for GB1 campaigns</em></font></caption>
   <thead>
     <tr>
       <th>Starts With</th>
@@ -706,7 +706,7 @@ The analysis focused on understanding various campaign paths leading to a purcha
 
 <div align="Center"> 
   <table>
-  <caption><font size=2><em>Table 7 - Path to purchase for GB2 campaigns</em></font></caption>
+  <caption><font size=2.5><em>Table 7 - Path to purchase for GB2 campaigns</em></font></caption>
   <thead>
     <tr>
       <th>Starts With</th>
@@ -771,13 +771,13 @@ In this analysis, consumer interactions with advertisements within 15 days of ex
 
 
 <div align="center">
-  <font size=2><em>Figure 8 – Chart showing time lag until conversion event after seeing an advertisement for GB1</em></font>
+  <font size=2.5><em>Figure 8 – Chart showing time lag until conversion event after seeing an advertisement for GB1</em></font>
   <br>
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/db11c552-bef2-4929-add1-86ebe6eeaece">
 </div>
 
 <div align="center">
-  <font size=2><em>Figure 9 – Chart showing time lag until conversion event after seeing an advertisement for GB2</em></font>
+  <font size=2.5><em>Figure 9 – Chart showing time lag until conversion event after seeing an advertisement for GB2</em></font>
   <br>
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/65a8c4ff-08a3-4283-accf-ac3162cdbb00">
 </div>
@@ -793,7 +793,7 @@ Table 8 displays GB1's top-performing segments, while Table 9 presents GB2's. No
 
 <div align="Center"> 
   <table>
-    <caption><font size=2><em>Table 8 - Best performing segments for GB1 in the period of August 2021 until June 2022</em></font></caption>
+    <caption><font size=2.5><em>Table 8 - Best performing segments for GB1 in the period of August 2021 until June 2022</em></font></caption>
     <thead>
         <tr>
             <th>Segment Name</th>
@@ -845,7 +845,7 @@ Table 8 displays GB1's top-performing segments, while Table 9 presents GB2's. No
 
 <div align="Center"> 
   <table>
-    <caption><font size=2><em>Table 9 - Best performing segments for GB2 in the period of August 2021 until June 2022</em></font></caption>
+    <caption><font size=2.5><em>Table 9 - Best performing segments for GB2 in the period of August 2021 until June 2022</em></font></caption>
     <thead>
         <tr>
             <th>Segment Name</th>
@@ -902,7 +902,7 @@ In the next phase of the analysis, the focus was on identifying the most lucrati
 
 <div align="Center"> 
   <table>
-  <caption><font size=2><em>Table 10 - Best performing age groups, divided by device, for GB1 in the period of August 2021 until June 2022</em></font></caption>
+  <caption><font size=2.5><em>Table 10 - Best performing age groups, divided by device, for GB1 in the period of August 2021 until June 2022</em></font></caption>
   <thead>
     <tr>
       <th>Segment Name</th>
@@ -1030,7 +1030,7 @@ In the next phase of the analysis, the focus was on identifying the most lucrati
 
 <div align="Center"> 
   <table>
-  <caption><font size=2><em>Table 11 - Best performing age groups, divided by device, for GB2 in the period of August 2021 until June 2022</em></font></caption>
+  <caption><font size=2.5><em>Table 11 - Best performing age groups, divided by device, for GB2 in the period of August 2021 until June 2022</em></font></caption>
   <thead>
     <tr>
       <th>Segment Name</th>
