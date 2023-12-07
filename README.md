@@ -199,7 +199,7 @@ The results for each country are shown on the table below. <i>Total Users</i> is
 
 <div align="Center">
 <table>
-    <font size=3><em><caption>Table 1 - Potential grooming consumers analysis results</caption></em></font>
+    <caption><font size=3><em>Table 1 - Potential grooming consumers analysis results</em></font></caption>
     <tr>
         <td><b>Country</b></td>
         <td><b>Total Users</b></td>
@@ -345,7 +345,7 @@ As a conclusion, it is noticeable that for GB1, the use of both advertisements i
 
 <div align="Center"> 
   <table>
-  <font size=3><em><caption>Table 2 - KPIs for GB1 split by exposure groups for the period of August 2021 until June 2022</caption></em></font>
+  <caption><font size=3><em>Table 2 - KPIs for GB1 split by exposure groups for the period of August 2021 until June 2022</em></font></caption>
   <thead>
     <tr>
       <th>Exposure Group</th>
@@ -415,7 +415,7 @@ As a conclusion, it is noticeable that for GB1, the use of both advertisements i
 
 <div align="Center"> 
   <table>
-  <font size=3><em><caption>Table 3 - KPIs for GB2 split by exposure groups for the period of August 2021 until June 2022</caption></em></font>
+  <caption><font size=3><em>Table 3 - KPIs for GB2 split by exposure groups for the period of August 2021 until June 2022</em></font></caption>
   <thead>
     <tr>
       <th>Exposure Group</th>
@@ -492,7 +492,7 @@ New queries were executed on AMC, incorporating the new exposure group for each 
 
 <div align="Center"> 
   <table>
-  <font size=3><em><caption>Table 4 - KPIs for GB1 split by exposure groups in July 2022</caption></em></font>
+  <caption><font size=3><em>Table 4 - KPIs for GB1 split by exposure groups in July 2022</em></font></caption>
   <thead>
     <tr>
       <th>Exposure Group</th>
@@ -566,7 +566,7 @@ New queries were executed on AMC, incorporating the new exposure group for each 
 
 <div align="Center"> 
   <table>
-  <font size=3><em><caption>Table 5 - KPIs for GB1 split by exposure groups in October 2022</caption></em></font>
+  <caption><font size=3><em>Table 5 - KPIs for GB1 split by exposure groups in October 2022</em></font></caption>
   <thead>
     <tr>
       <th>Exposure Group</th>
@@ -647,7 +647,7 @@ The analysis focused on understanding various campaign paths leading to a purcha
 
 <div align="Center"> 
   <table>
-  <font size=3><em><caption>Table 6 - Path to purchase for GB1 campaigns</caption></em></font>
+  <caption><font size=3><em>Table 6 - Path to purchase for GB1 campaigns</em></font></caption>
   <thead>
     <tr>
       <th>Starts With</th>
@@ -706,7 +706,7 @@ The analysis focused on understanding various campaign paths leading to a purcha
 
 <div align="Center"> 
   <table>
-  <font size=3><em><caption>Table 7 - Path to purchase for GB2 campaigns</caption></em></font>
+  <caption><font size=3><em>Table 7 - Path to purchase for GB2 campaigns</em></font></caption>
   <thead>
     <tr>
       <th>Starts With</th>
@@ -793,7 +793,7 @@ Table 8 displays GB1's top-performing segments, while Table 9 presents GB2's. No
 
 <div align="Center"> 
   <table>
-    <font size=3><em><caption>Table 8 - Best performing segments for GB1 in the period of August 2021 until June 2022</caption></em></font>
+    <caption><font size=3><em>Table 8 - Best performing segments for GB1 in the period of August 2021 until June 2022</em></font></caption>
     <thead>
         <tr>
             <th>Segment Name</th>
@@ -845,7 +845,7 @@ Table 8 displays GB1's top-performing segments, while Table 9 presents GB2's. No
 
 <div align="Center"> 
   <table>
-    <font size=3><em><caption>Table 9 - Best performing segments for GB2 in the period of August 2021 until June 2022</caption></em></font>
+    <caption><font size=3><em>Table 9 - Best performing segments for GB2 in the period of August 2021 until June 2022</em></font></caption>
     <thead>
         <tr>
             <th>Segment Name</th>
@@ -902,7 +902,7 @@ In the next phase of the analysis, the focus was on identifying the most lucrati
 
 <div align="Center"> 
   <table>
-  <font size=3><em><caption>Table 10 - Best performing age groups, divided by device, for GB1 in the period of August 2021 until June 2022</caption></em></font>
+  <caption><font size=3><em>Table 10 - Best performing age groups, divided by device, for GB1 in the period of August 2021 until June 2022</em></font></caption>
   <thead>
     <tr>
       <th>Segment Name</th>
@@ -1030,7 +1030,7 @@ In the next phase of the analysis, the focus was on identifying the most lucrati
 
 <div align="Center"> 
   <table>
-  <font size=3><em><caption>Table 11 - Best performing age groups, divided by device, for GB2 in the period of August 2021 until June 2022</caption></em></font>
+  <caption><font size=3><em>Table 11 - Best performing age groups, divided by device, for GB2 in the period of August 2021 until June 2022</em></font></caption>
   <thead>
     <tr>
       <th>Segment Name</th>
