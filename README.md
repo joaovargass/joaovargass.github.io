@@ -1,6 +1,8 @@
 <style>
-  p {
+  div {
     font-size:200px;
+    width: 100%;
+    font-style: italic;
   }
 </style>
   
@@ -283,11 +285,11 @@ Two queries were used on AMC to get the information needed for the analysis, one
 For day parting, the main KPI used to understand how the campaign has performed is the purchase rate, which was calculated for each hour of the day. After calculating the purchase rate per hour, a chart was plot for each marketing campaign in analysis. On this chart, besides the purchase rate per hour, the percentage of the total daily impressions a campaign has received is displayed too, also divided by hour of the day. One of the results of this analysis for GB1 is shown on the chart below. It is possible to see that the time of the day that this specific campaign receives the most impressions is during the night, but the best purchase rate happens during the morning period.
 </div>
 
-<p align="center">
+<div align="center">
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/fe9a19a1-f7cc-458f-8ed4-a96d5f9b6fc6">
   <br>
   Figure 1 – Day parting chart for a GB1 marketing campaign
-</p>
+</div>
 
 <div align="justify">
 Regarding the frequency cap, the objective was to determine the optimal number of advertisements to display to a consumer for optimal results. After obtaining the query results, the key performance indicators (KPIs) of purchase rate and return on ad spend (ROAS) were utilized to identify the optimal values. The analysis unfolded in two stages: initially, the number of impressions was aggregated into groups of 5. For instance, if a user viewed an ad once within a 30-day period, the user would fall into the 1 to 5 ads group. Subsequently, the analysis was refined by adjusting the query to capture more detailed values. Instead of using frequency groups, individual frequencies were treated as distinct groups. In the given example, the user would now be categorized in the 1 ad group. For each of these groups, the percentage of users falling into them was computed. Two separate charts were generated for each campaign under examination. One chart compared the purchase rate and the number of users in each group, while the other chart compared the purchase rate for each group with the corresponding ROAS.
@@ -295,29 +297,29 @@ Regarding the frequency cap, the objective was to determine the optimal number o
 Figures 2 and 3 illustrate the outcomes of the initial phase of the analysis for GB1 shavers campaigns, while Figures 4 and 5 depict the second phase of the analysis for the same campaigns. Notably, the first part of the analysis yields results that lack granularity, preventing the identification of precise optimal frequency values. In the first phase, the selected campaign exhibits its optimal frequency cap value between 6 to 10 advertisements per month, as indicated by the highest ROAS and purchase rate within that range. Conversely, the second part introduces more detailed frequency values. For the specific campaign depicted in the charts, the optimal frequency cap is determined to be 10 advertisements per month, aligning with the peak ROAS and purchase rate.
 </div>
 
-<p align="center">
+<div align="center">
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/2f9f420e-f5b2-4fe6-9ebe-48c4e248016c">
   <br>
   Figure 2 – Frequency cap chart for GB1 shavers in November 2021 – Purchase rate vs Percentage of users in frequency bucket (groups of 5)
-</p>
+</div>
 
-<p align="center">
+<div align="center">
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/cca76246-23b7-48c1-8f91-04d6209f627e">
   <br>
   Figure 3 – Frequency cap for GB1 shavers in November 2021 – Purchase rate vs ROAS per frequency bucket (groups of 5)
-</p>
+</div>
 
-<p align="center">
+<div align="center">
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/81127e99-cb32-4ec4-8a94-7a6ae3d776ed">
   <br>
   Figure 4 – Frequency cap for GB1 shavers in November 2021 – Purchase rate vs Percentage of users in frequency bucket (singular)
-</p>
+</div>
 
-<p align="center">
+<div align="center">
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/ea5c1277-4549-4c2f-9a02-38162bd0b8b6">
   <br>
   Figure 5 – Frequency cap for GB1 shavers in November 2021 – Purchase rate vs ROAS per frequency bucket (singular)
-</p>
+</div>
 
 #### Media vehicles
 
@@ -330,17 +332,17 @@ Regarding GB1, it's evident that, for the majority of months, employing both Dis
 </div>
 
 
-<p align="center">
+<div align="center">
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/6ecb7f14-ed88-4883-ba04-e1c94fc0d0b7">
   <br>
   Figure 6 – ROAS for each exposure group by month – GB1
-</p>
+</div>
 
-<p align="center">
+<div align="center">
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/b1b653bc-e47b-4b57-bba3-e0ab48b3a171">
   <br>
   Figure 7 – ROAS for each exposure group by month – GB2
-</p>
+</div>
 
 <div align="justify">
 To get a general picture of the use of both types of advertisements, the comparison values were summed for all the months in analysis, and the results were put in a table for each brand. For both GB1 and GB2, most part of the impressions come from Display advertisements, but the ROAS and purchase rate for this exposure group are very low. For GB1, as shown on Table 2, using the combination of both types of advertisements gives the best results. For GB2, observing the results on Table 3, the purchase rate is better when overlapping the advertisements, but the ROAS is better when using only Search ads.
@@ -776,17 +778,17 @@ In this analysis, consumer interactions with advertisements within 15 days of ex
 </div>
 
 
-<p align="center">
+<div align="center">
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/db11c552-bef2-4929-add1-86ebe6eeaece">
   <br>
   Figure 8 – Chart showing time lag until conversion event after seeing an advertisement for GB1
-</p>
+</div>
 
-<p align="center">
+<div align="center">
   <img src="https://github.com/joaovargass/joaovargass.github.io/assets/39708920/65a8c4ff-08a3-4283-accf-ac3162cdbb00">
   <br>
   Figure 9 – Chart showing time lag until conversion event after seeing an advertisement for GB2
-</p>
+</div>
 
 #### Consumer audiences
 
