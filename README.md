@@ -199,7 +199,7 @@ The results for each country are shown on the table below. <i>Total Users</i> is
 
 <div align="Center">
 <table>
-    <caption>Table 1 - Potential grooming consumers analysis results</caption>
+    <caption font-size: "50%"><em>Table 1 - Potential grooming consumers analysis results<em></caption>
     <tr>
         <td><b>Country</b></td>
         <td><b>Total Users</b></td>
