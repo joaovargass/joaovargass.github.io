@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="styles.css">
+<style>
+  caption {
+    font-style: italic;
+    font-size: 14px;
+  }
+  p {
+    font-style: italic;
+    font-size: 14px;
+  }
+</style>
 </head>
 <body>
+  
 # Marketing Technology: a study on compliance, acquisition and usage of first-party data in digital marketing
 
 <div align="justify">
@@ -205,7 +215,7 @@ The results for each country are shown on the table below. <i>Total Users</i> is
 
 <div align="Center">
 <table>
-    <caption font-size: "14px"><em>Table 1 - Potential grooming consumers analysis results<em></caption>
+    <caption>Table 1 - Potential grooming consumers analysis results</caption>
     <tr>
         <td><b>Country</b></td>
         <td><b>Total Users</b></td>
