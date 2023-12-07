@@ -1,5 +1,7 @@
 # Marketing Technology: a study on compliance, acquisition and usage of first-party data in digital marketing
+<div texr-align="justify">
 Projeto de formatura do aluno João Vitor Vargas Soares para conclusão do curso de Engenharia de Computação da Escola Politécnica da USP feito em inglês.
+</div>
 
 ## Objectives
 
