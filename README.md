@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-  caption {
-    font-style: italic;
-    font-size: 14px;
-  }
-  p {
-    font-style: italic;
-    font-size: 14px;
-  }
-</style>
 </head>
 <body>
   
