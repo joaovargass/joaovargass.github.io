@@ -3629,7 +3629,7 @@ input, select, textarea {
 		height: 4rem;
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
-		/* overflow: hidden; */
+		overflow: hidden;
 		padding: 0 2rem 0 0;
 		position: relative;
 		width: calc(100% - 4rem);
@@ -4806,13 +4806,20 @@ input, select, textarea {
   }
 
   @media screen and (max-width: 736px) {
+		.dropdown {
+			float: unset;
+			overflow: contents;
+		}
 		.dropdown-content {
 			text-align: left;
-			padding-left: 0.5em;
-			display: block;
+			display: contents;
 		}
+		.dropdown:hover .dropdown-content {
+			display: contents;
+		  }
 		.dropdown-link {
 			background-color: unset;
+			padding-left: 1rem !important;
 		}
 		.dropdown-link:hover {
 			background-color: unset !important
