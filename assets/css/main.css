@@ -3629,12 +3629,12 @@ input, select, textarea {
 		height: 4rem;
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
-		overflow: hidden;
+		/* overflow: hidden; */
 		padding: 0 2rem 0 0;
 		position: relative;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
-		z-index: 2;
+		z-index: 3;
 	}
 
 		#nav ul.divided li {
@@ -4761,3 +4761,60 @@ input, select, textarea {
 		padding-top: 1em;
 	}
 }
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown-content {
+	background-color: white;
+	text-align: center;
+	display: none;
+	position: absolute;
+}
+#nav ul.links li.active div.dropdown-content {
+	border:rgba(0, 0, 0, 0.65);
+	border-style: solid;
+	border-top: none;
+	border-width: 0.5px;
+}
+
+.dropdown-link {
+	background-color:rgba(0, 0, 0, 0.65)
+}
+
+#nav ul.links li.active a.dropdown-link {
+	background-color: white;
+}
+
+#nav ul.links li.active a.dropdown-link:hover {
+	background-color: white !important;
+	border-top:rgba(0, 0, 0, 0.65);
+	border-bottom:rgba(0, 0, 0, 0.65);
+	border-left: none;
+	border-right: none;
+	border-style: solid;
+	border-width: 0.5px;
+}
+
+.dropdown-link:hover {
+	background-color:rgba(0, 0, 0, 0.55) !important
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+  }
+
+  @media screen and (max-width: 736px) {
+		.dropdown-content {
+			text-align: left;
+			padding-left: 0.5em;
+			display: block;
+		}
+		.dropdown-link {
+			background-color: unset;
+		}
+		.dropdown-link:hover {
+			background-color: unset !important
+		}
+	}
