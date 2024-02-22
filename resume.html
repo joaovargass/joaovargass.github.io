@@ -192,7 +192,7 @@
 									</div>
 									<div class="row">
 										<div class="col-4 col-12-small">
-											<h3 style="margin-bottom: 0;">English</h5>
+											<h3 style="margin-bottom: 0;">English (C1)</h5>
 										</div>
 										<div class="col-8 col-12-small">
 											<div class="progress-bar-grey progress-bar-round">
@@ -202,7 +202,7 @@
 									</div>
 									<div class="row">
 										<div class="col-4 col-12-small">
-											<h3 style="margin-bottom: 0;">French</h5>
+											<h3 style="margin-bottom: 0;">French (B2)</h5>
 										</div>
 										<div class="col-8 col-12-small">
 											<div class="progress-bar-grey progress-bar-round">
@@ -212,7 +212,7 @@
 									</div>
 									<div class="row">
 										<div class="col-4 col-12-small">
-											<h3 style="margin-bottom: 0;">Spanish</h5>
+											<h3 style="margin-bottom: 0;">Spanish (A1)</h5>
 										</div>
 										<div class="col-8 col-12-small">
 											<div class="progress-bar-grey progress-bar-round">
@@ -227,23 +227,26 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<form method="post" action="#">
+							<form id="emailForms" method="post" action="https://formspree.io/f/xleqbqgo">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+										<input type="text" name="name" id="name"/>
+										<label class="required" id="nameValidation">Name field required</label>
 									</div>
 									<div class="field">
 										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
+										<input type="text" name="email" id="email"/>
+										<label class="required" id="emailValidation"></label>
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
 										<textarea name="message" id="message" rows="3"></textarea>
+										<label class="required" id="messageValidation">Message field required</label>
 									</div>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="button" value="Send Message" onclick="validateForms()"/></li>
 								</ul>
 							</form>
 						</section>
@@ -288,6 +291,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/formValidation.js"></script>
 
 	</body>
 </html>
