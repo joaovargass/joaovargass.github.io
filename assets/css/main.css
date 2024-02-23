@@ -2603,6 +2603,18 @@ input, select, textarea {
 		.image img {
 			display: block;
 		}
+		.image > img.center {
+			text-align: center !important; 
+			margin-left: auto; 
+			margin-right: auto;
+			max-width: 100% !important;
+		}
+
+		.image.center {
+			margin-left: auto; 
+			margin-right: auto;
+			width: 100%;
+		}
 
 		.image.left, .image.right {
 			max-width: 40%;
@@ -4825,3 +4837,27 @@ input, select, textarea {
 			background-color: unset !important
 		}
 	}
+
+.table_config {
+	width: 80%; 
+	text-align: center !important; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+	@media screen and (max-width: 736px) { 
+		.table_config {
+			width: 100%;
+		}
+	}
+
+.code {
+	margin-left: auto; 
+	margin-right: auto;
+	padding-left: 20em;
+	width: 100%;
+}
+@media screen and (max-width: 736px) { 
+	.code {
+		padding-left: unset;
+	}
+}
