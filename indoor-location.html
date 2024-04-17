@@ -53,19 +53,691 @@
 								<h1>Indoor location</h1>
 								<p>
 									This project aims to assess the effectiveness of Machine Learning prediction algorithms—such as Decision Tree, K-Nearest Neighbors, 
-									Support Vector Machine, and Gaussian Process Regression—in determining device locations based on WiFi signal strengths indoors. It utilizes 
-									datasets from Shopping Eldorado and Jaume I University. Indoors, GPS signals frequently falter due to obstructions like buildings, 
+									Support Vector Classifier—in determining device locations based on WiFi signal strengths indoors. It utilizes 
+									datasets from Eldorado and Jaume I University. Indoors, GPS signals frequently falter due to obstructions like buildings, 
 									which hinder reception, as well as materials such as concrete and metal that diminish signals, and multipath interference that distorts 
 									signals. Hence, alternative localization methods are imperative for precise indoor positioning.
 								</p>
 							</header>
 							<div class="image main"><img src="images/indoor-location.jpeg" alt="" /></div>
 
+							<h2>Context</h2>
+							<p>
+								In today's increasingly interconnected world, indoor positioning systems have emerged as crucial tools for a wide array of applications, 
+								ranging from enhancing user experience in shopping malls to optimizing workflow in industrial settings. One promising approach utilizes 
+								WiFi signals to determine the location of individuals within buildings. Unlike GPS, which struggles with accuracy indoors due to signal 
+								interference, WiFi-based positioning offers a viable solution. This project seeks to harness the power of classification machine learning 
+								algorithms to precisely locate users within indoor environments based on WiFi signal strength measurements.
+							</p>
+							<h2>Objective</h2>
+							<p>
+								The primary goal of this project is to evaluate and compare the performance of various classification machine learning algorithms in 
+								accurately determining the location of users within buildings using WiFi signal strength data. The algorithms under consideration 
+								include Decision Tree, Random Forest, Extra-Trees, Gaussian Naive Bayes, K-Nearest Neighbors, Logistic Regression, Support Vector 
+								Classification, and Extreme Gradient Boosting.
+							</p>
+							<h2>About the datasets</h2>
+							<p>
+								This project utilizes two datasets: one from Jaume I University <a href="indoor-location.html">(UJIIndoorLoc)</a> and 
+								another from Eldorado mall in São Paulo, which is not publicly available. Both datasets 
+								include WiFi signal strength measurements (RSSI) and corresponding room classifications. The Jaume I dataset provides additional 
+								information such as floor, building, coordinates, and user details, though only RSSI and room data are relevant for this project. 
+								The aim is to compare classification machine learning algorithms' performance in indoor positioning using WiFi signal strength, 
+								crucial for accurate indoor navigation where GPS signals are unreliable.
+							</p>
+							<h2>Acknowledgements</h2>
+							<p>
+								This project, conducted as part of a scientific initiation program at the University of São Paulo, expands upon the groundwork 
+								laid by the <a href="https://pcs.usp.br/wp-content/uploads/2016/12/Banner_PCS2502_SEM_2016_Grupo_S05.pdf">Net.Map</a>, 
+								which initially applied machine learning algorithms for indoor user localization. However, the 
+								focus of this study extends beyond simple localization; it aims to compare the performance metrics of a diverse array of 
+								machine learning algorithms, including newer methodologies not previously explored. This broadened scope allows for a comprehensive 
+								evaluation and selection of the most effective algorithms for indoor positioning systems, thus advancing the field's understanding 
+								and applicability.
+							</p>
+							<p>
+								Acknowledgments are extended to Bradesco Bank for their support throughout this research endeavor. Additionally, the paper titled 
+								<a href="https://www.researchgate.net/publication/360384006_Data_Cleansing_for_Indoor_Positioning_Wi-Fi_Fingerprinting_Datasets">"Data Cleansing for Indoor Positioning Wi-Fi Fingerprinting Datasets"</a> 
+								played a pivotal role in establishing the data cleansing procedures.
+								 By incorporating this innovative technique, the reliability and accuracy of the datasets were ensured, thereby enhancing the robustness 
+								 of the analysis. Leveraging datasets from both academic and commercial environments, originally utilized in the Net.Map project, enables 
+								 a thorough assessment of machine learning algorithms' efficacy in indoor positioning applications, contributing to the development of 
+								 more accurate and reliable location-based services.
+							</p>
+							<h2>Used technologies</h2>
+							<p>
+								In the analysis and prediction of location within the used datasets, Jupyter notebooks and essential Python 
+								libraries such as pandas, matplotlib, seaborn, wordcloud, and scikit-learn were employed.
+							</p>
+							<hr/>
+							<h2>Exploratory Data Analysis (EDA)</h2>
+							<p>
+								The Eldorado mall dataset consists of 763 rows and 581 columns, while the UJIIndoorloc dataset comprises 1396 rows and 521 columns. 
+								Both datasets underwent preprocessing to remove irrelevant columns, retaining only RSSI measurements from various WiFi networks. 
+								The final column in each dataset serves as room labels, indicating the user's location during signal capture. While the Eldorado mall 
+								dataset has 20 room labels, the UJIIndoorloc dataset contains 45 room labels, reflecting nuanced labeling structures.
+							</p>
+							<h3>Frequency of occurence of each label</h3>
+							<p>
+								In this section, both charts depict the frequency distribution of each class or room label within their respective datasets, revealing 
+								significant class imbalance. This imbalance highlights the necessity for cautious model training to mitigate biases and ensure optimal 
+								performance. The visual representation of class frequencies serves as crucial context for understanding dataset characteristics and 
+								guiding strategies to address class imbalance during model development.
+							</p>
+							<div class="image center"><img class="center" src="images/indoor-frequency-classes-eldorado.png" alt="Frequency eldorado" /></div>
+							<figcaption>Figure 1: Frequency of occurence for each label in Eldorado dataset</figcaption>
+							<div class="image center"><img class="center" src="images/indoor-frequency-classes-UJI.png" alt="Frequency UJI" /></div>
+							<figcaption>Figure 2: Frequency of occurence for each label in UJIIndoorloc dataset</figcaption>
+							<hr/>
+							<h2>Data cleaning and pre-processing</h2>
+							<p>
+								Data cleaning and pre-processing are crucial steps in preparing datasets for machine learning tasks, ensuring data quality and relevance. 
+								For both the Eldorado mall and UJIIndoorloc datasets, a multi-faceted approach was employed to enhance data integrity and reduce 
+								dimensionality. Firstly, low variance filtering was applied to identify columns with minimal variance, indicative of limited variability 
+								across the dataset. By removing columns where the variance was zero, this technique effectively reduced dimensionality, focusing on features 
+								with meaningful variability that contribute to classification tasks.
+							</p>
+							<p>
+								Subsequently, the feature importance functionality of the random forest classifier was utilized to assess the relevance of each feature in 
+								predicting the target variable. Through training the random forest model on the dataset, the importance of each feature was evaluated based 
+								on its impact on model performance. Features with zero importance, suggesting negligible predictive power, were pruned from the dataset, 
+								further refining the feature set. Additionally, a data cleaning strategy informed by the paper 
+								<a href="https://www.researchgate.net/publication/360384006_Data_Cleansing_for_Indoor_Positioning_Wi-Fi_Fingerprinting_Datasets">"Data Cleansing for Indoor Positioning Wi-Fi Fingerprinting Datasets"</a> 
+								was adopted, drawing on established techniques to enhance the quality and reliability of indoor positioning datasets. 
+								Furthermore, as part of pre-processing, the dataset columns were normalized to have a zero mean and standard deviation of 1, ensuring uniform 
+								scaling and facilitating convergence during model training.
+							</p>
+							<hr/>
+							<h2>Choosing algorithms</h2>
+							<p>
+								In this section, an overview is provided of the machine learning algorithms employed for indoor location classification based on WiFi 
+								signal strengths. Accurate indoor localization is vital for numerous applications, and the variability of WiFi signals within buildings 
+								necessitates robust classification approaches. A range of algorithms is examined, including Decision Tree, Random Forest, Extra-Trees, 
+								Gaussian Naive Bayes, K-Nearest Neighbors, Logistic Regression, Support Vector Classification, and Extreme Gradient Boosting. Each 
+								algorithm offers unique strengths such as interpretability, computational efficiency, and handling of complex relationships and large 
+								datasets.
+							</p>
+							<ul>
+								<li>
+									<b>Decision Tree:</b> Interpretable results suitable for room-based classification, may overfit on large datasets; fast training but may increase 
+									significantly with hyperparameter optimization, impacting computational time.
+								</li>
+								<li>
+									<b>Random Forest:</b> Robust against overfitting, efficient on big datasets with parallel processing; hyperparameter optimization can increase 
+									training time, but benefits from ensemble learning for improved performance.
+								</li>
+								<li>
+									<b>Extra-Trees:</b> Faster training than Random Forest due to randomized thresholds, suitable for large datasets; can have higher computational 
+									time during hyperparameter optimization compared to other algorithms due to its randomized split points, which lead to a larger search space. 
+									This results in longer training times as each combination of hyperparameters requires building multiple trees.
+								</li>
+								<li>
+									<b>Gaussian Naive Bayes:</b> Fast training even with large datasets, suitable for smaller datasets, may lack complexity for very large ones
+									; hyperparameter optimization is minimal due to simplicity, maintaining low computational time.
+								</li>
+								<li>
+									<b>K-Nearest Neighbors:</b> Effective with high-dimensional data, slower on large datasets due to distance computations; hyperparameter 
+									optimization increases training time, especially with larger datasets, impacting computational efficiency.
+								</li>
+								<li>
+									<b>Logistic Regression:</b> Efficient for room classification tasks, scales well with dataset size; hyperparameter optimization adds minimal 
+									overhead, maintaining fast training times.
+								</li>
+								<li>
+									<b>Support Vector Classification:</b> Effective for high-dimensional data, may be slower for very large datasets due to kernel complexity; 
+									hyperparameter optimization can significantly increase training time, especially with non-linear kernels.
+								</li>
+								<li>
+									<b>Extreme Gradient Boosting (XGBoost):</b> High performance on room-based classification, longer training times compared to simpler algorithms; 
+									hyperparameter optimization can substantially increase training time due to the complexity of the model and the search space, impacting 
+									computational efficiency.
+								</li>
+							</ul>
+							<hr/>
+							<h2>Algorithms' implementation</h2>
+							<p>
+								The implementation of classification machine learning algorithms followed a structured approach to ensure reliable model training and 
+								evaluation. Initially, the datasets were split into training and testing sets using an 80%-20% ratio, enabling independent validation 
+								of model performance. Default configurations were employed as the base case for training each algorithm, after which hyperparameter 
+								optimization was conducted using both random search and grid search techniques. Hyperparameter spaces were defined for each algorithm, 
+								allowing for systematic exploration of various configurations. The best-performing parameters, identified through cross-validation on 
+								the training set, were selected to train the final models. This iterative process aimed to maximize classification accuracy and 
+								generalization performance.
+							</p>
+							<hr/>
+							<h2>Performance comparison</h2>
+							<p>
+								The performance of multiclass classification algorithms for indoor location classification was rigorously assessed using a diverse set of 
+								evaluation metrics. These metrics included accuracy, precision macro-averaged, F1-score macro-averaged, recall macro-averaged, Matthew's 
+								correlation coefficient, Cohen's kappa score, log loss (cross-entropy), and computational time. Comparisons were conducted between different 
+								algorithms and also between using or not using hyperparameter optimization techniques, aiming to identify the most effective algorithms 
+								and optimization strategies for indoor location classification tasks.
+							</p>
 
+							<h3>Accuracy and precision</h3>
+							<p>
+								The classification algorithms' performance varied in terms of accuracy and precision across the two datasets. Figures 3 and 4 show the results for both
+								metrics. Decision tree achieved high accuracy on the simpler Shopping Eldorado dataset, with both standard and optimized versions performing well. 
+								However, its precision varied slightly between datasets, indicating some variability in correctly identifying positive instances. 
+								Extra-trees demonstrated consistently high accuracy and precision on both datasets, highlighting its robustness and ability to generalize well 
+								to different scenarios. Gaussian Naive Bayes, while showing decent accuracy on the simpler dataset, struggled with precision on the UJIIndoorLoc 
+								dataset, possibly due to its assumption of feature independence. KNN exhibited moderate accuracy and precision, with a slight improvement seen with 
+								hyperparameter optimization. Logistic regression displayed good accuracy but relatively lower precision, especially on the UJIIndoorLoc dataset, 
+								suggesting some misclassifications of positive instances. Random forest consistently showed high accuracy and precision, 
+								indicating its effectiveness in capturing complex patterns and generalizing well to new data. SVC showed moderate accuracy and precision, 
+								with slight improvements observed with hyperparameter optimization, particularly on the UJIIndoorLoc dataset. XGBoost achieved 
+								the highest accuracy and precision on both datasets, highlighting its effectiveness in capturing intricate patterns and accurately 
+								identifying positive instances.
+							</p>
+							<p>
+								Overall, extra-trees, random forest, and XGBoost emerged as the top-performing algorithms, demonstrating high accuracy 
+								and precision across both datasets. Their ensemble and gradient boosting techniques likely contributed to their superior performance by 
+								effectively capturing complex relationships in the data and making accurate predictions.
+							</p>
+							<div class="image center"><img class="center" src="images/indoor-accuracy.png" alt="Accuracy indoor" /></div>
+							<figcaption>Figure 3: Accuracy of each algorithm</figcaption>
+							<div class="image center"><img class="center" src="images/indoor-precision.png" alt="Precision indoor" /></div>
+							<figcaption>Figure 4: Precision of each algorithm</figcaption>
 
+							<h3>Cross-entropy (log-loss)</h3>
+							<p>
+								The log-loss metric measures the accuracy of a classifier's predicted probabilities compared to the actual labels. This performance 
+								metric is displayed on Figure 5 for all datasets and algorithms in analysis. Lower log-loss values 
+								indicate better performance. In the given results, decision tree and gaussian naive bayes consistently exhibit higher log-loss values across 
+								both datasets. Decision trees, including decision tree and extra-trees classifiers, tend to overfit the training data, resulting in 
+								poor generalization to unseen data, which is reflected in their higher log-loss values. Gaussian naive bayes, being a naive Bayes classifier, 
+								assumes independence among features, which might not hold true for complex datasets like indoor location data, leading to suboptimal probability 
+								estimation and higher log-loss values.
+							</p>
+							<p>
+								KNN also demonstrates relatively higher log-loss values, especially on the UJIIndoorLoc dataset. This could be because the algorithm's 
+								performance heavily depends on the choice of the k parameter and may struggle to capture the underlying patterns in high-dimensional 
+								datasets like indoor location data. However, with hyperparameter optimization, some improvements in performance are observed, indicating 
+								better model calibration.
+							</p>
+							<p>
+								On the other hand, algorithms like logistic, random forest, SVC, and XGBoost consistently demonstrate lower log-loss values across both datasets. 
+								These algorithms are known for their robustness and effectiveness in probability estimation tasks. They generally avoid overfitting and have 
+								mechanisms to handle complex decision boundaries, resulting in better generalization. Among them, XGBoost stands out as the best-performing 
+								algorithm, followed closely by logistic regression and random forest. XGBoost's gradient boosting framework and ensemble techniques enable it 
+								to capture complex relationships in the data, leading to superior performance in probability estimation tasks.
+							</p>
+							<div class="image center"><img class="center" src="images/indoor-log-loss.png" alt="Log loss indoor" /></div>
+							<figcaption>Figure 5: Log loss (cross-entropy) of each algorithm</figcaption>
 
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+							<h3>Cohen Kappa's Score and Matthew's Correlation Coefficient</h3>
+							<p>
+								Cohen's kappa score and Matthew's correlation coefficient are commonly used metrics for evaluating the performance of classification algorithms, 
+								especially in multiclass classification tasks. These metrics are preferred because they consider both correct and incorrect predictions and 
+								account for chance agreement, making them suitable for imbalanced datasets or datasets with multiple classes. Figures 6 and 7 show these
+								metrics results for the selected algorithms and datasets.
+							</p>
+							<p>
+								Looking at the results, decision tree, extra-trees, random forest, logistic regression, SVC, and XGBoost consistently demonstrate high Cohen's 
+								kappa scores and Matthew's correlation coefficients across both datasets. These algorithms exhibit strong performance in capturing the underlying 
+								patterns and relationships within the data, resulting in high agreement between predicted and actual classifications.
+							</p>
+							<p>
+								Gaussian naive Bayes and KNN show moderate agreement scores, especially on the UJIIndoorLoc dataset. Gaussian naive Bayes assumes independence 
+								among features, which might not hold true for complex datasets like indoor location data with correlated features. KNN's performance may be 
+								sensitive to the choice of the k parameter and the dataset's dimensionality, affecting its agreement scores.
+							</p>
+							<p>
+								Among the best-performing algorithms, XGBoost stands out with near-perfect agreement scores, indicating its superior performance in indoor 
+								location classification tasks. XGBoost, along with other top-performing algorithms, leverages its strengths in capturing complex patterns and 
+								relationships within the data to achieve high agreement between predicted and actual classifications. On the other hand, Gaussian naive bayes and 
+								KNN, although showing moderate performance, exhibit comparatively lower agreement scores due to their limitations in 
+								handling complex data patterns.	
+							</p>
+							<div class="image center"><img class="center" src="images/indoor-kcs.png" alt="CKP indoor" /></div>
+							<figcaption>Figure 6: Cohen kappa's score of each algorithm</figcaption>
+							<div class="image center"><img class="center" src="images/indoor-mcc.png" alt="MCC indoor" /></div>
+							<figcaption>Figure 7: Matthew's correlation coefficient of each algorithm</figcaption>
+							
+							<h3>Computational time</h3>
+							<p>
+								In terms of computational time performance, from worst to best, the algorithms exhibit varying efficiency. Figure 8 shows the results for
+								computational time for each of the analyzed algorithms and datasets. At the lower end of the spectrum, 
+								algorithms like extra-trees with hyperparameter optimization and random forest with hyperparameter optimization demand the 
+								most time, clocking in at 384.87 and 262.20 seconds, respectively, on the UJIIndoorLoc dataset. These ensemble methods undergo exhaustive 
+								search processes during hyperparameter optimization, significantly increasing computational overhead. This extensive tuning, while potentially 
+								enhancing model performance, comes at the cost of longer computation times, impacting real-time deployment feasibility.
+							</p>
+							<p>
+								Following closely, XGBoost with hyperparameter optimization takes 220.41 seconds, as its gradient boosting framework requires iterative 
+								optimization, prolonging computational time. However, despite its relatively longer computational time, XGBoost achieves high performance 
+								metrics, indicating a trade-off between computational efficiency and model effectiveness. Meanwhile, algorithms like SVC with hyperparameter 
+								optimization and logistic regression with hyperparameter optimization demonstrate respectable performances, consuming 18.37 and 24.38 seconds, 
+								respectively, on the UJIIndoorLoc dataset. The complexity of solving quadratic programming problems contributes to the SVC's longer 
+								optimization duration, while logistic regression's simpler model architecture leads to relatively shorter optimization times despite 
+								hyperparameter tuning.
+							</p>
+							<p>
+								At the faster end of the spectrum, algorithms such as extra-trees and random forest without hyperparameter optimization exhibit more 
+								efficient computational times, at 0.30 and 0.29 seconds, respectively, on the UJIIndoorLoc dataset. These ensemble methods offer a 
+								balance between computational efficiency and model performance without the need for extensive hyperparameter tuning. Gaussian naive Bayes, 
+								with its simple probabilistic approach, demonstrates the best computational time performance, requiring only 0.01 seconds. 
+								Its efficiency stems from the assumption of feature independence and straightforward parameter estimation, making it highly suitable for 
+								applications where computational resources are limited. However, it often sacrifices some level of predictive power compared to more 
+								complex algorithms. Therefore, while computational time is crucial for real-time applications, it must be balanced with model 
+								performance considerations.
+							</p>
+							<div class="image center"><img class="center" src="images/indoor-time.png" alt="Time indoor" /></div>
+							<figcaption>Figure 8: Computational time of each algorithm</figcaption>
+
+							<h2>Choosing best cases</h2>
+							<p>
+								In comparing the classification algorithms for indoor location, it's evident that Random Forest, Extra Trees, and XGBoost consistently 
+								outperform other algorithms across various metrics and datasets. These algorithms exhibit high accuracy, precision, F1 score, recall, 
+								Matthews correlation coefficient (MCC), and Cohen’s kappa score, as shown on Table 1. They are particularly well-suited for multiclass classification tasks 
+								due to their ability to handle complex datasets with multiple classes efficiently.
+							</p>
+							<p>
+								One significant factor contributing to the success of these algorithms is their robustness and adaptability to different datasets and problem 
+								domains. Random Forest, Extra Trees, and XGBoost are ensemble learning methods that combine multiple weak learners to create a strong classifier, 
+								enabling them to capture complex relationships in the data and avoid overfitting. Additionally, these algorithms offer scalability and 
+								computational efficiency, making them suitable for large-scale datasets like UJIIndoorLoc and Shopping Eldorado.
+							</p>
+							<p>
+								While hyperparameter optimization can improve the performance of classifiers, it comes with drawbacks such as increased computational time and 
+								the risk of overfitting to the training data. The computational time for algorithms like Random Forest and XGBoost significantly increases with 
+								hyperparameter optimization, which may not be feasible for real-time applications or large datasets. Despite this drawback, Random Forest, 
+								Extra Trees, and XGBoost emerge as the top-performing algorithms due to their superior performance across multiple metrics and datasets. 
+								Their ability to balance computational efficiency with high predictive accuracy makes them ideal choices for indoor location classification tasks.
+							</p>
+							<div class="table-wrapper table_config big freeze-table">
+							<table id="T_40545">
+							<thead>
+								<tr>
+								<th class="blank" >&nbsp;</th>
+								<th class="blank level0" >&nbsp;</th>
+								<th id="T_40545_level0_col0" class="col_heading level0 col0" >Accuracy</th>
+								<th id="T_40545_level0_col1" class="col_heading level0 col1" >Precision</th>
+								<th id="T_40545_level0_col2" class="col_heading level0 col2" >F1</th>
+								<th id="T_40545_level0_col3" class="col_heading level0 col3" >Recall</th>
+								<th id="T_40545_level0_col4" class="col_heading level0 col4" >MCC</th>
+								<th id="T_40545_level0_col5" class="col_heading level0 col5" >CK</th>
+								<th id="T_40545_level0_col6" class="col_heading level0 col6" >Log loss</th>
+								<th id="T_40545_level0_col7" class="col_heading level0 col7" >Time</th>
+								</tr>
+								<tr>
+								<th class="index_name level0 col-classifier fixed-header" >Classifier</th>
+								<th class="index_name level1 col-dataset fixed-header" >Dataset</th>
+								<th class="blank col0" >&nbsp;</th>
+								<th class="blank col1" >&nbsp;</th>
+								<th class="blank col2" >&nbsp;</th>
+								<th class="blank col3" >&nbsp;</th>
+								<th class="blank col4" >&nbsp;</th>
+								<th class="blank col5" >&nbsp;</th>
+								<th class="blank col6" >&nbsp;</th>
+								<th class="blank col7" >&nbsp;</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								<th id="T_40545_level0_row0" class="row_heading level0 row0 col-classifier fixed-header" rowspan="4">Decision Tree</th>
+								<th id="T_40545_level1_row0" class="row_heading level1 row0 col-dataset fixed-header" >Eldorado</th>
+								<td id="T_40545_row0_col0" class="data row0 col0" >97.4%</td>
+								<td id="T_40545_row0_col1" class="data row0 col1" >93.9%</td>
+								<td id="T_40545_row0_col2" class="data row0 col2" >93.3%</td>
+								<td id="T_40545_row0_col3" class="data row0 col3" >93.0%</td>
+								<td id="T_40545_row0_col4" class="data row0 col4" >97.2%</td>
+								<td id="T_40545_row0_col5" class="data row0 col5" >97.2%</td>
+								<td id="T_40545_row0_col6" class="data row0 col6" >0.94</td>
+								<td id="T_40545_row0_col7" class="data row0 col7" >0.02</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row1" class="row_heading level1 row1 col-dataset fixed-header" >Eldorado HPO</th>
+								<td id="T_40545_row1_col0" class="data row1 col0" >98.0%</td>
+								<td id="T_40545_row1_col1" class="data row1 col1" >98.3%</td>
+								<td id="T_40545_row1_col2" class="data row1 col2" >98.2%</td>
+								<td id="T_40545_row1_col3" class="data row1 col3" >98.4%</td>
+								<td id="T_40545_row1_col4" class="data row1 col4" >97.9%</td>
+								<td id="T_40545_row1_col5" class="data row1 col5" >97.9%</td>
+								<td id="T_40545_row1_col6" class="data row1 col6" >0.71</td>
+								<td id="T_40545_row1_col7" class="data row1 col7" >5.24</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row2" class="row_heading level1 row2 col-dataset fixed-header" >UJIIndoorLoc</th>
+								<td id="T_40545_row2_col0" class="data row2 col0" >85.4%</td>
+								<td id="T_40545_row2_col1" class="data row2 col1" >86.0%</td>
+								<td id="T_40545_row2_col2" class="data row2 col2" >85.3%</td>
+								<td id="T_40545_row2_col3" class="data row2 col3" >86.5%</td>
+								<td id="T_40545_row2_col4" class="data row2 col4" >85.0%</td>
+								<td id="T_40545_row2_col5" class="data row2 col5" >84.9%</td>
+								<td id="T_40545_row2_col6" class="data row2 col6" >5.28</td>
+								<td id="T_40545_row2_col7" class="data row2 col7" >0.03</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row3" class="row_heading level1 row3 col-dataset fixed-header" >UJIIndoorLoc HPO</th>
+								<td id="T_40545_row3_col0" class="data row3 col0" >85.4%</td>
+								<td id="T_40545_row3_col1" class="data row3 col1" >85.1%</td>
+								<td id="T_40545_row3_col2" class="data row3 col2" >84.4%</td>
+								<td id="T_40545_row3_col3" class="data row3 col3" >85.4%</td>
+								<td id="T_40545_row3_col4" class="data row3 col4" >84.9%</td>
+								<td id="T_40545_row3_col5" class="data row3 col5" >84.9%</td>
+								<td id="T_40545_row3_col6" class="data row3 col6" >5.16</td>
+								<td id="T_40545_row3_col7" class="data row3 col7" >4.64</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level0_row4" class="row_heading level0 row4 col-classifier fixed-header" rowspan="4">Extra-Trees</th>
+								<th id="T_40545_level1_row4" class="row_heading level1 row4 col-dataset fixed-header" >Eldorado</th>
+								<td id="T_40545_row4_col0" class="data row4 col0" >98.0%</td>
+								<td id="T_40545_row4_col1" class="data row4 col1" >98.4%</td>
+								<td id="T_40545_row4_col2" class="data row4 col2" >98.6%</td>
+								<td id="T_40545_row4_col3" class="data row4 col3" >99.0%</td>
+								<td id="T_40545_row4_col4" class="data row4 col4" >97.9%</td>
+								<td id="T_40545_row4_col5" class="data row4 col5" >97.9%</td>
+								<td id="T_40545_row4_col6" class="data row4 col6" >0.21</td>
+								<td id="T_40545_row4_col7" class="data row4 col7" >0.21</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row5" class="row_heading level1 row5 col-dataset fixed-header" >Eldorado HPO</th>
+								<td id="T_40545_row5_col0" class="data row5 col0" >98.0%</td>
+								<td id="T_40545_row5_col1" class="data row5 col1" >98.5%</td>
+								<td id="T_40545_row5_col2" class="data row5 col2" >97.2%</td>
+								<td id="T_40545_row5_col3" class="data row5 col3" >96.5%</td>
+								<td id="T_40545_row5_col4" class="data row5 col4" >97.9%</td>
+								<td id="T_40545_row5_col5" class="data row5 col5" >97.9%</td>
+								<td id="T_40545_row5_col6" class="data row5 col6" >0.21</td>
+								<td id="T_40545_row5_col7" class="data row5 col7" >308.16</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row6" class="row_heading level1 row6 col-dataset fixed-header" >UJIIndoorLoc</th>
+								<td id="T_40545_row6_col0" class="data row6 col0" >96.8%</td>
+								<td id="T_40545_row6_col1" class="data row6 col1" >96.4%</td>
+								<td id="T_40545_row6_col2" class="data row6 col2" >96.1%</td>
+								<td id="T_40545_row6_col3" class="data row6 col3" >96.6%</td>
+								<td id="T_40545_row6_col4" class="data row6 col4" >96.7%</td>
+								<td id="T_40545_row6_col5" class="data row6 col5" >96.7%</td>
+								<td id="T_40545_row6_col6" class="data row6 col6" >0.30</td>
+								<td id="T_40545_row6_col7" class="data row6 col7" >0.30</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row7" class="row_heading level1 row7 col-dataset fixed-header" >UJIIndoorLoc HPO</th>
+								<td id="T_40545_row7_col0" class="data row7 col0" >96.4%</td>
+								<td id="T_40545_row7_col1" class="data row7 col1" >95.9%</td>
+								<td id="T_40545_row7_col2" class="data row7 col2" >95.8%</td>
+								<td id="T_40545_row7_col3" class="data row7 col3" >96.4%</td>
+								<td id="T_40545_row7_col4" class="data row7 col4" >96.3%</td>
+								<td id="T_40545_row7_col5" class="data row7 col5" >96.3%</td>
+								<td id="T_40545_row7_col6" class="data row7 col6" >0.34</td>
+								<td id="T_40545_row7_col7" class="data row7 col7" >384.87</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level0_row8" class="row_heading level0 row8 col-classifier fixed-header" rowspan="4">Gaussian Naive Bayes</th>
+								<th id="T_40545_level1_row8" class="row_heading level1 row8 col-dataset fixed-header" >Eldorado</th>
+								<td id="T_40545_row8_col0" class="data row8 col0" >94.1%</td>
+								<td id="T_40545_row8_col1" class="data row8 col1" >95.2%</td>
+								<td id="T_40545_row8_col2" class="data row8 col2" >93.6%</td>
+								<td id="T_40545_row8_col3" class="data row8 col3" >93.0%</td>
+								<td id="T_40545_row8_col4" class="data row8 col4" >93.7%</td>
+								<td id="T_40545_row8_col5" class="data row8 col5" >93.6%</td>
+								<td id="T_40545_row8_col6" class="data row8 col6" >1.98</td>
+								<td id="T_40545_row8_col7" class="data row8 col7" >0.01</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row9" class="row_heading level1 row9 col-dataset fixed-header" >Eldorado HPO</th>
+								<td id="T_40545_row9_col0" class="data row9 col0" >94.8%</td>
+								<td id="T_40545_row9_col1" class="data row9 col1" >95.3%</td>
+								<td id="T_40545_row9_col2" class="data row9 col2" >94.7%</td>
+								<td id="T_40545_row9_col3" class="data row9 col3" >95.5%</td>
+								<td id="T_40545_row9_col4" class="data row9 col4" >94.4%</td>
+								<td id="T_40545_row9_col5" class="data row9 col5" >94.3%</td>
+								<td id="T_40545_row9_col6" class="data row9 col6" >1.52</td>
+								<td id="T_40545_row9_col7" class="data row9 col7" >2.03</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row10" class="row_heading level1 row10 col-dataset fixed-header" >UJIIndoorLoc</th>
+								<td id="T_40545_row10_col0" class="data row10 col0" >71.1%</td>
+								<td id="T_40545_row10_col1" class="data row10 col1" >78.0%</td>
+								<td id="T_40545_row10_col2" class="data row10 col2" >71.5%</td>
+								<td id="T_40545_row10_col3" class="data row10 col3" >73.5%</td>
+								<td id="T_40545_row10_col4" class="data row10 col4" >70.5%</td>
+								<td id="T_40545_row10_col5" class="data row10 col5" >70.2%</td>
+								<td id="T_40545_row10_col6" class="data row10 col6" >8.97</td>
+								<td id="T_40545_row10_col7" class="data row10 col7" >0.01</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row11" class="row_heading level1 row11 col-dataset fixed-header" >UJIIndoorLoc HPO</th>
+								<td id="T_40545_row11_col0" class="data row11 col0" >78.6%</td>
+								<td id="T_40545_row11_col1" class="data row11 col1" >85.0%</td>
+								<td id="T_40545_row11_col2" class="data row11 col2" >80.7%</td>
+								<td id="T_40545_row11_col3" class="data row11 col3" >82.5%</td>
+								<td id="T_40545_row11_col4" class="data row11 col4" >78.2%</td>
+								<td id="T_40545_row11_col5" class="data row11 col5" >77.9%</td>
+								<td id="T_40545_row11_col6" class="data row11 col6" >3.34</td>
+								<td id="T_40545_row11_col7" class="data row11 col7" >2.08</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level0_row12" class="row_heading level0 row12 col-classifier fixed-header" rowspan="4">KNN</th>
+								<th id="T_40545_level1_row12" class="row_heading level1 row12 col-dataset fixed-header" >Eldorado</th>
+								<td id="T_40545_row12_col0" class="data row12 col0" >91.5%</td>
+								<td id="T_40545_row12_col1" class="data row12 col1" >89.9%</td>
+								<td id="T_40545_row12_col2" class="data row12 col2" >87.6%</td>
+								<td id="T_40545_row12_col3" class="data row12 col3" >89.0%</td>
+								<td id="T_40545_row12_col4" class="data row12 col4" >90.9%</td>
+								<td id="T_40545_row12_col5" class="data row12 col5" >90.8%</td>
+								<td id="T_40545_row12_col6" class="data row12 col6" >0.67</td>
+								<td id="T_40545_row12_col7" class="data row12 col7" >0.01</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row13" class="row_heading level1 row13 col-dataset fixed-header" >Eldorado HPO</th>
+								<td id="T_40545_row13_col0" class="data row13 col0" >95.4%</td>
+								<td id="T_40545_row13_col1" class="data row13 col1" >95.8%</td>
+								<td id="T_40545_row13_col2" class="data row13 col2" >94.1%</td>
+								<td id="T_40545_row13_col3" class="data row13 col3" >93.7%</td>
+								<td id="T_40545_row13_col4" class="data row13 col4" >95.1%</td>
+								<td id="T_40545_row13_col5" class="data row13 col5" >95.0%</td>
+								<td id="T_40545_row13_col6" class="data row13 col6" >0.17</td>
+								<td id="T_40545_row13_col7" class="data row13 col7" >2.15</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row14" class="row_heading level1 row14 col-dataset fixed-header" >UJIIndoorLoc</th>
+								<td id="T_40545_row14_col0" class="data row14 col0" >76.4%</td>
+								<td id="T_40545_row14_col1" class="data row14 col1" >79.5%</td>
+								<td id="T_40545_row14_col2" class="data row14 col2" >74.3%</td>
+								<td id="T_40545_row14_col3" class="data row14 col3" >74.1%</td>
+								<td id="T_40545_row14_col4" class="data row14 col4" >75.8%</td>
+								<td id="T_40545_row14_col5" class="data row14 col5" >75.7%</td>
+								<td id="T_40545_row14_col6" class="data row14 col6" >1.56</td>
+								<td id="T_40545_row14_col7" class="data row14 col7" >0.00</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row15" class="row_heading level1 row15 col-dataset fixed-header" >UJIIndoorLoc HPO</th>
+								<td id="T_40545_row15_col0" class="data row15 col0" >91.1%</td>
+								<td id="T_40545_row15_col1" class="data row15 col1" >90.1%</td>
+								<td id="T_40545_row15_col2" class="data row15 col2" >89.0%</td>
+								<td id="T_40545_row15_col3" class="data row15 col3" >89.9%</td>
+								<td id="T_40545_row15_col4" class="data row15 col4" >90.8%</td>
+								<td id="T_40545_row15_col5" class="data row15 col5" >90.8%</td>
+								<td id="T_40545_row15_col6" class="data row15 col6" >2.02</td>
+								<td id="T_40545_row15_col7" class="data row15 col7" >2.59</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level0_row16" class="row_heading level0 row16 col-classifier fixed-header" rowspan="4">Logistic Regression</th>
+								<th id="T_40545_level1_row16" class="row_heading level1 row16 col-dataset fixed-header" >Eldorado</th>
+								<td id="T_40545_row16_col0" class="data row16 col0" >95.4%</td>
+								<td id="T_40545_row16_col1" class="data row16 col1" >94.4%</td>
+								<td id="T_40545_row16_col2" class="data row16 col2" >93.8%</td>
+								<td id="T_40545_row16_col3" class="data row16 col3" >94.8%</td>
+								<td id="T_40545_row16_col4" class="data row16 col4" >95.1%</td>
+								<td id="T_40545_row16_col5" class="data row16 col5" >95.0%</td>
+								<td id="T_40545_row16_col6" class="data row16 col6" >0.10</td>
+								<td id="T_40545_row16_col7" class="data row16 col7" >0.15</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row17" class="row_heading level1 row17 col-dataset fixed-header" >Eldorado HPO</th>
+								<td id="T_40545_row17_col0" class="data row17 col0" >96.7%</td>
+								<td id="T_40545_row17_col1" class="data row17 col1" >95.5%</td>
+								<td id="T_40545_row17_col2" class="data row17 col2" >95.1%</td>
+								<td id="T_40545_row17_col3" class="data row17 col3" >96.0%</td>
+								<td id="T_40545_row17_col4" class="data row17 col4" >96.5%</td>
+								<td id="T_40545_row17_col5" class="data row17 col5" >96.5%</td>
+								<td id="T_40545_row17_col6" class="data row17 col6" >0.17</td>
+								<td id="T_40545_row17_col7" class="data row17 col7" >41.46</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row18" class="row_heading level1 row18 col-dataset fixed-header" >UJIIndoorLoc</th>
+								<td id="T_40545_row18_col0" class="data row18 col0" >87.9%</td>
+								<td id="T_40545_row18_col1" class="data row18 col1" >88.0%</td>
+								<td id="T_40545_row18_col2" class="data row18 col2" >86.8%</td>
+								<td id="T_40545_row18_col3" class="data row18 col3" >87.2%</td>
+								<td id="T_40545_row18_col4" class="data row18 col4" >87.5%</td>
+								<td id="T_40545_row18_col5" class="data row18 col5" >87.5%</td>
+								<td id="T_40545_row18_col6" class="data row18 col6" >0.33</td>
+								<td id="T_40545_row18_col7" class="data row18 col7" >0.62</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row19" class="row_heading level1 row19 col-dataset fixed-header" >UJIIndoorLoc HPO</th>
+								<td id="T_40545_row19_col0" class="data row19 col0" >88.9%</td>
+								<td id="T_40545_row19_col1" class="data row19 col1" >89.7%</td>
+								<td id="T_40545_row19_col2" class="data row19 col2" >88.7%</td>
+								<td id="T_40545_row19_col3" class="data row19 col3" >88.9%</td>
+								<td id="T_40545_row19_col4" class="data row19 col4" >88.6%</td>
+								<td id="T_40545_row19_col5" class="data row19 col5" >88.6%</td>
+								<td id="T_40545_row19_col6" class="data row19 col6" >0.36</td>
+								<td id="T_40545_row19_col7" class="data row19 col7" >24.38</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level0_row20" class="row_heading level0 row20 col-classifier fixed-header" rowspan="4">Random Forest</th>
+								<th id="T_40545_level1_row20" class="row_heading level1 row20 col-dataset fixed-header" >Eldorado</th>
+								<td id="T_40545_row20_col0" class="data row20 col0" >97.4%</td>
+								<td id="T_40545_row20_col1" class="data row20 col1" >98.4%</td>
+								<td id="T_40545_row20_col2" class="data row20 col2" >97.0%</td>
+								<td id="T_40545_row20_col3" class="data row20 col3" >96.6%</td>
+								<td id="T_40545_row20_col4" class="data row20 col4" >97.2%</td>
+								<td id="T_40545_row20_col5" class="data row20 col5" >97.2%</td>
+								<td id="T_40545_row20_col6" class="data row20 col6" >0.23</td>
+								<td id="T_40545_row20_col7" class="data row20 col7" >0.21</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row21" class="row_heading level1 row21 col-dataset fixed-header" >Eldorado HPO</th>
+								<td id="T_40545_row21_col0" class="data row21 col0" >98.7%</td>
+								<td id="T_40545_row21_col1" class="data row21 col1" >99.2%</td>
+								<td id="T_40545_row21_col2" class="data row21 col2" >98.6%</td>
+								<td id="T_40545_row21_col3" class="data row21 col3" >98.3%</td>
+								<td id="T_40545_row21_col4" class="data row21 col4" >98.6%</td>
+								<td id="T_40545_row21_col5" class="data row21 col5" >98.6%</td>
+								<td id="T_40545_row21_col6" class="data row21 col6" >0.25</td>
+								<td id="T_40545_row21_col7" class="data row21 col7" >198.79</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row22" class="row_heading level1 row22 col-dataset fixed-header" >UJIIndoorLoc</th>
+								<td id="T_40545_row22_col0" class="data row22 col0" >96.4%</td>
+								<td id="T_40545_row22_col1" class="data row22 col1" >96.4%</td>
+								<td id="T_40545_row22_col2" class="data row22 col2" >96.0%</td>
+								<td id="T_40545_row22_col3" class="data row22 col3" >96.5%</td>
+								<td id="T_40545_row22_col4" class="data row22 col4" >96.3%</td>
+								<td id="T_40545_row22_col5" class="data row22 col5" >96.3%</td>
+								<td id="T_40545_row22_col6" class="data row22 col6" >0.34</td>
+								<td id="T_40545_row22_col7" class="data row22 col7" >0.29</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row23" class="row_heading level1 row23 col-dataset fixed-header" >UJIIndoorLoc HPO</th>
+								<td id="T_40545_row23_col0" class="data row23 col0" >97.5%</td>
+								<td id="T_40545_row23_col1" class="data row23 col1" >96.9%</td>
+								<td id="T_40545_row23_col2" class="data row23 col2" >96.8%</td>
+								<td id="T_40545_row23_col3" class="data row23 col3" >97.3%</td>
+								<td id="T_40545_row23_col4" class="data row23 col4" >97.4%</td>
+								<td id="T_40545_row23_col5" class="data row23 col5" >97.4%</td>
+								<td id="T_40545_row23_col6" class="data row23 col6" >0.36</td>
+								<td id="T_40545_row23_col7" class="data row23 col7" >262.20</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level0_row24" class="row_heading level0 row24 col-classifier fixed-header" rowspan="4">SVC</th>
+								<th id="T_40545_level1_row24" class="row_heading level1 row24 col-dataset fixed-header" >Eldorado</th>
+								<td id="T_40545_row24_col0" class="data row24 col0" >95.4%</td>
+								<td id="T_40545_row24_col1" class="data row24 col1" >96.8%</td>
+								<td id="T_40545_row24_col2" class="data row24 col2" >93.7%</td>
+								<td id="T_40545_row24_col3" class="data row24 col3" >92.7%</td>
+								<td id="T_40545_row24_col4" class="data row24 col4" >95.1%</td>
+								<td id="T_40545_row24_col5" class="data row24 col5" >95.0%</td>
+								<td id="T_40545_row24_col6" class="data row24 col6" >0.39</td>
+								<td id="T_40545_row24_col7" class="data row24 col7" >0.57</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row25" class="row_heading level1 row25 col-dataset fixed-header" >Eldorado HPO</th>
+								<td id="T_40545_row25_col0" class="data row25 col0" >95.4%</td>
+								<td id="T_40545_row25_col1" class="data row25 col1" >94.4%</td>
+								<td id="T_40545_row25_col2" class="data row25 col2" >93.8%</td>
+								<td id="T_40545_row25_col3" class="data row25 col3" >94.8%</td>
+								<td id="T_40545_row25_col4" class="data row25 col4" >95.1%</td>
+								<td id="T_40545_row25_col5" class="data row25 col5" >95.0%</td>
+								<td id="T_40545_row25_col6" class="data row25 col6" >0.38</td>
+								<td id="T_40545_row25_col7" class="data row25 col7" >9.91</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row26" class="row_heading level1 row26 col-dataset fixed-header" >UJIIndoorLoc</th>
+								<td id="T_40545_row26_col0" class="data row26 col0" >80.4%</td>
+								<td id="T_40545_row26_col1" class="data row26 col1" >80.3%</td>
+								<td id="T_40545_row26_col2" class="data row26 col2" >76.3%</td>
+								<td id="T_40545_row26_col3" class="data row26 col3" >76.5%</td>
+								<td id="T_40545_row26_col4" class="data row26 col4" >79.8%</td>
+								<td id="T_40545_row26_col5" class="data row26 col5" >79.7%</td>
+								<td id="T_40545_row26_col6" class="data row26 col6" >0.91</td>
+								<td id="T_40545_row26_col7" class="data row26 col7" >1.04</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row27" class="row_heading level1 row27 col-dataset fixed-header" >UJIIndoorLoc HPO</th>
+								<td id="T_40545_row27_col0" class="data row27 col0" >88.9%</td>
+								<td id="T_40545_row27_col1" class="data row27 col1" >88.6%</td>
+								<td id="T_40545_row27_col2" class="data row27 col2" >86.9%</td>
+								<td id="T_40545_row27_col3" class="data row27 col3" >87.7%</td>
+								<td id="T_40545_row27_col4" class="data row27 col4" >88.6%</td>
+								<td id="T_40545_row27_col5" class="data row27 col5" >88.6%</td>
+								<td id="T_40545_row27_col6" class="data row27 col6" >0.80</td>
+								<td id="T_40545_row27_col7" class="data row27 col7" >18.37</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level0_row28" class="row_heading level0 row28 col-classifier fixed-header" rowspan="4">XGBoost</th>
+								<th id="T_40545_level1_row28" class="row_heading level1 row28 col-dataset fixed-header" >Eldorado</th>
+								<td id="T_40545_row28_col0" class="data row28 col0" >99.3%</td>
+								<td id="T_40545_row28_col1" class="data row28 col1" >99.5%</td>
+								<td id="T_40545_row28_col2" class="data row28 col2" >99.5%</td>
+								<td id="T_40545_row28_col3" class="data row28 col3" >99.5%</td>
+								<td id="T_40545_row28_col4" class="data row28 col4" >99.3%</td>
+								<td id="T_40545_row28_col5" class="data row28 col5" >99.3%</td>
+								<td id="T_40545_row28_col6" class="data row28 col6" >0.05</td>
+								<td id="T_40545_row28_col7" class="data row28 col7" >1.29</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row29" class="row_heading level1 row2 col-dataset fixed-header" >Eldorado HPO</th>
+								<td id="T_40545_row29_col0" class="data row29 col0" >99.3%</td>
+								<td id="T_40545_row29_col1" class="data row29 col1" >99.5%</td>
+								<td id="T_40545_row29_col2" class="data row29 col2" >99.5%</td>
+								<td id="T_40545_row29_col3" class="data row29 col3" >99.5%</td>
+								<td id="T_40545_row29_col4" class="data row29 col4" >99.3%</td>
+								<td id="T_40545_row29_col5" class="data row29 col5" >99.3%</td>
+								<td id="T_40545_row29_col6" class="data row29 col6" >0.05</td>
+								<td id="T_40545_row29_col7" class="data row29 col7" >144.00</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row30" class="row_heading level1 row30 col-dataset fixed-header" >UJIIndoorLoc</th>
+								<td id="T_40545_row30_col0" class="data row30 col0" >93.2%</td>
+								<td id="T_40545_row30_col1" class="data row30 col1" >92.3%</td>
+								<td id="T_40545_row30_col2" class="data row30 col2" >91.2%</td>
+								<td id="T_40545_row30_col3" class="data row30 col3" >91.6%</td>
+								<td id="T_40545_row30_col4" class="data row30 col4" >93.0%</td>
+								<td id="T_40545_row30_col5" class="data row30 col5" >93.0%</td>
+								<td id="T_40545_row30_col6" class="data row30 col6" >0.29</td>
+								<td id="T_40545_row30_col7" class="data row30 col7" >2.36</td>
+								</tr>
+								<tr>
+								<th id="T_40545_level1_row31" class="row_heading level1 row31 col-dataset fixed-header" >UJIIndoorLoc HPO</th>
+								<td id="T_40545_row31_col0" class="data row31 col0" >91.8%</td>
+								<td id="T_40545_row31_col1" class="data row31 col1" >91.7%</td>
+								<td id="T_40545_row31_col2" class="data row31 col2" >90.4%</td>
+								<td id="T_40545_row31_col3" class="data row31 col3" >90.9%</td>
+								<td id="T_40545_row31_col4" class="data row31 col4" >91.6%</td>
+								<td id="T_40545_row31_col5" class="data row31 col5" >91.5%</td>
+								<td id="T_40545_row31_col6" class="data row31 col6" >0.29</td>
+								<td id="T_40545_row31_col7" class="data row31 col7" >220.41</td>
+								</tr>
+							</tbody>
+							<caption>Table 1: Metrics for performance comparioson of the ML algorithms</caption>
+							</table>
+							</div>
 						</section>
 
 				</div>
