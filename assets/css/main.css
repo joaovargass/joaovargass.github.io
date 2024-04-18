@@ -4817,7 +4817,7 @@ input, select, textarea {
 	display: block;
   }
 
-  @media screen and (max-width: 736px) {
+  @media screen and (max-width: 980px) {
 		.dropdown {
 			float: unset;
 			overflow: contents;
